@@ -1,0 +1,65 @@
+html, body {
+	height: 100vh;
+	height: 100%;
+	width: 100vw;
+	width: 100%;
+	background: #d0d0d0;
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+textarea.form-control {
+	width: 100vw;
+	margin: 0;
+	padding: 15px;
+	border-top-color: #999;
+	border-top-style: solid;
+	border-right-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	opacity: 0.95;
+}
+
+.form-group {
+	width:  100vw;
+	height: 100%;
+}
+
+.btn {
+	text-align: center;
+	display: block;
+	position: relative;
+	float: right;
+	right: 10px;
+	bottom: 15px;
+}
+
+div#input {
+	width: 100vw;
+	height: 30%;
+	height: 30vh;
+}
+
+div#output {
+	width: 100vw;
+	height: 70vh;
+	height: 70%;
+}
+
+#inputTextbox {
+	height: 100%;
+}
+
+#outputTextbox {
+	min-height: 400px;
+	height: 100%;
+}
+
+placeholder {
+	font-style: italic;
+}

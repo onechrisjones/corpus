@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Corpus [v0.2]   •   Stories --> Unique words</title>
+
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+  </head>
+  <body>
+
+    <!-- .js -->
+    <script>
+
+var Corpus = function() {
+
+  // instantiate general properties on the object that we will always need:
+  
+  rawText = document.getElementById("inputTextbox").value;
+
+  this.lines = rawText.replace(/[\"\,\.\-\!\?]/g, "") // " , . ! ? -
+                      .replace(/\n\s*\n/g, "\n")      // multiple line breaks with potential whitespace between
+                      .replace(/^\s+|\s+$/gm, "")     // whitespace at beginning/end of lines
+                      .split("\n");
+
+  var pureLines = this.lines.filter(function(elem) {
+    return elem.charAt(0) != "#"; // exclude MD headers
+  });
+
+  this.words = pureLines.reduce(function(a, b) {
+    return a.concat(b.split(" "));
+  }, []);  
+
+  this.uniqueWords = this.words.filter(function(value, index, self) {
+    return self.indexOf(value) === index;
+  });
+  
+  // object with count of each word: http://stackoverflow.com/a/11649321/1417584
+  this.count = { };
+  for (var i = 0, j = this.words.length; i < j; i++) {
+    this.count[this.words[i]] = (this.count[this.words[i]] || 0) + 1;
+  }
+}
+
+
+function setOutputText(val) {
+  outputTextbox = document.getElementById("outputTextbox");
+  outputTextbox.value = val;
+}
+
+
+function sortedWordList() {
+  
+}
+ 
+
+function concordance() {
+  var corpus = new Corpus(),
+      stream = [],
+      formattedOutput = ["#New words, by story, with total count for this document"],
+      n = 1;
+    
+  // Procedural style favored in the main processing loop, because it's basically stream processing
+  for (i = 0; i < corpus.lines.length; i++) {
+    // if the line has a MD header:
+    if (corpus.lines[i].charAt(0) == "#") {
+      formattedOutput.push(""); // spacer for MD headers
+      formattedOutput.push("#".concat(corpus.lines[i]));
+      n = 1;
+    } else {
+      var words = corpus.lines[i].split(" ");
+      var newWords = words.filter(function(elem) {
+        return stream.indexOf(elem) == -1;
+      });
+      newWords.forEach(function(elem) {
+        var freq = corpus.count[elem];
+        stream.push(elem);
+        formattedOutput.push(n + ") " + elem + "     (" + freq + ")");
+        n++;
+      });
+
+    }    
+  }
+  
+  var finalOutput = formattedOutput.join("\n");
+  setOutputText(finalOutput);
+}
+
+    </script>
+	
+		<div id="input">    
+			<div class="form-group">
+            	<textarea id="inputTextbox" class="form-control" placeholder="Paste your stories with Markdown (#) headings in this box. Clicking the button below will process your corpus, finding all 'new words', and will list them all accordingly beneath the appropriate heading." ></textarea>
+          		
+			</div>
+			<button class="btn" type="button" onclick="concordance() ">Concordance
+          	</button>
+      </div>
+
+        <div id="output">
+          <div class="form-group">
+            <textarea id="outputTextbox" class="form-control" placeholder="New Words list will load in this box after processing" readonly></textarea>
+          </div>
+        </div>
+
+  </body>
+</html>
+
