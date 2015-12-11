@@ -1,3 +1,20 @@
+# Corpus.app
+
+Thanks for checking this out. We want to build a platform agnostic and (one day) feature rich alternative to [FLEx](https://github.com/sillsdev/FieldWorks) with [Electron](https://github.com/atom/electron). Currently, we're calling this tool *Corpus*.
+
+![Imaginary Mock-up](https://dl.dropboxusercontent.com/u/538337/Tumblr/Pane1%20Minimized.png)
+
+***
+
+The first step might be to build out something really similar to [Notational Velocity](https://github.com/scrod/nv) and [Atom](https://github.com/atom/atom) with Electron, and then add functionality from there. Might find help in [nvatom](https://github.com/seongjaelee/nvatom). 
+
+Currently, there are some .js scripts to run at an input on a web page to produce some Markdown 'reports' on manually entered (pasted) data... This has already saved many hours for production of certain literacy materials. This tool is what you'll see here, styled with an old eversion of the lightweight [MUI CSS framework](https://github.com/muicss/mui).
+
+Read a little blog post with a bit more information about what we're trying to do [here](http://onechrisjones.me/post/133608536194).
+
+***
+
+### Some Old notes
 
 1. Write stories in a 'text editor' interface
 2. Link media you transcribed stories from
@@ -7,23 +24,23 @@
 6. Profiling scripts
 
 
-1.1 lots of caveats here, but this should feel like a text editor... Options to show invisibles, line numbering, and phonetic character upport should be baked in.
+1.1 lots of caveats here, but this should feel like a text editor... Options to show invisibles, line numbering, and phonetic character (unicode) upport should be baked in.
 
 1.2 should probably be able to display multiple text files in the same window if multiple files are selected... Some sort of ui seperator between them in the window.
 
-1.3 split view horizontal or vertical... For stuff like looking at a dictionary doc and a group of stories simultaneously...
+1.3 split view horizontal or vertical... For stuff like looking at your lexicon and a group of stories simultaneously...
 
-2.1 linking or embedding media... Interacting with media... These features can get really involved, so keep it minimal, especially initially.
+2.1 linking or embedding media... Interacting with media... Would need to have some transcription-friendly controls to be valuable.
 
-3.1 okay, storing the stories should be done with just plain text in a folder somewhere... User chooses the folder on his device or dropbox, whatever... and it 'just works'. Maybe all linked media needs to be in that folder too... I dunno how that'll work yet. No db trash though... Too complicated, and not cross platform.
+3.1 okay, storing the stories should be done with just plain text in a folder somewhere... User chooses the folder on his device or dropbox, whatever... and it 'just works'. Maybe all linked media needs to be in that folder too... not sure how that should work... any DB needs to be platform agnostic.
 
-3.2 versioning! Stories will need to be versioned... As we make changes, iron out kinks in the alphabet... We want to look at the decisions weve made in the past, and be able to go back to a previous way things were done... This might be a cross-platform nightmare... Not sure how this works.
+3.2 versioning! As we test replacements in baseline texts, this can help us iron out kinks in the alphabet... We want to look at the decisions weve made in the past, and be able to go back to a previous way things were done... This might be a cross-platform nightmare... Not sure how this works.
 
-4.1 i like the idea of some sort of standard spot on on all the story.md files for meta data...
+4.1 storage of  meta-data about the baseline files...
 
 5.1 initially, just run a script and generate an md 'dictionary' file (all individual words in alphabetical order, obvs), and then just version that... The program will update it, make new ones when stories are added to the corpus... Selecting certain stories (manually, or by #tag(s)...), you can make a dictionary report from just those selected stories (for example, maybe you tag all your stories 'done' once you've checked them with a language helper... And you want the most accurate dictionary possible, so you'd select only '#done' stories, and generate a dictionary report from those. Obviously, as you get #done with more stories, you'll update the dictionary, adding any new words to it.)
 
-5.2 adding 'gloss' or 'definition' information will be tricky, and gets dangerously close to lexicography. I say we keep this really simple, and let people get as creative as they want behind the 'head-word'. The potential problem here might be updating a dictionary file after any definitions have been added... Maybe the 'update dictionary' script could be smart enough to just add new words in the appropriate spots, and not mess with any definition information (obviously, dictionary lines will follow a logical structure, and start with the 'head-word', maybe in md **bold**, then maybe some separator, like a 'dash' maybe, and then any user added definition/gloss information.) I think this should be kept as simple as possible... No lexical database stuff, just an alphabetical list of everything separated by punctuation or whitespace (complex forms as entries). Just versioned text (MARKDOWN!) files. The whole thing is just versioned text files, and some scripts that make can pump out more versioned text files... 
+5.2 adding 'gloss' or 'definition' information will be tricky, and gets dangerously close to DB based lexicography. I say we keep this really simple, and let people get as creative as they want behind the 'head-word'. *The potential problem here might be updating a dictionary file after any definitions have been added*... Maybe the 'update dictionary' script could be smart enough to just add new words in the appropriate spots, and not mess with any definition information (obviously, dictionary lines will follow a logical structure, and start with the 'head-word', maybe in md **bold**, then maybe some separator, like a 'dash' maybe, and then any user added definition/gloss information.) I think this should be kept as simple as possible... No lexical database stuff, just an alphabetical list of everything separated by punctuation or whitespace (complex forms as entries). Just versioned text (MARKDOWN!) files. The whole thing is just versioned text files, and some scripts that make can pump out more versioned text files... 
 
 5.3 i really like the idea of browsing the dictionary though, and displaying (in a pane or something) a list of all the instances of that word in your corpus... (Find all in 'project' basically). Then a 'replace all in project' too... Maybe there could be a special kind of 'dictionary based' find and replace thing... But it is useful for correcting typos, unifying spelling across work from multiple typists or language learners... But it is valuable beyond the scope of just words too... So definitely gotta have a really cool find and replace funtionality.... The versioning is super handy here too, in case you make mistakes.
 
@@ -31,13 +48,11 @@
 
 6.1 it'd be so tight to be able to mine your corpus for all sorts of frequency information, anything really. Really killer find/replace would be enough here, but the GUI would need to be right. We might want to see how often a letter ends a word, co-occurs with another letter, how often int occurs in the corpus... But this doesnt necessarily need to be a tool just for this little niche situation... If there was an atom package that made a few UI tweaks, had a few little extra bells and whistles... Could be perfect!
 
-
 ***
 
-Glossa Goals
-====
+#### Some older notes.
 
-##Good Linguistics software is going to help Linguists/Lexicographers make Dictionaries/Lexicons of languages.
+Good Linguistics software is going to help Linguists/Lexicographers make Dictionaries/Lexicons of languages.
 
 We basically do this by entering 'data' - like dictionary 'entries' (i.e. cat = gato ... but there is lot's of meta data too, right? That is a noun, there might be conjugations... etc.). Lexicons do the same thing as dictionaries, but at a deeper level. For example, '-ing' is a MORPHEME in english... the smallest unit of meaning. Morphemes, too have lot's of metadata associated with them, and that all needs to get figured out, recorded, and sifted through. 'Runn-ing' is combination of 2 morphemes, a verb root and an affix (in this case, a suffix) [(run)+(-ing)]. 
 
@@ -47,7 +62,7 @@ Currently, the software standards now are 'FLEx', and... well... nothing else. t
 
 My friend and I came up with a preliminary name for this piece of software... Glossa. Below, Is what I have been thinking through in terms of Glossa's Workflow... I can't really speak to the 'DB Schema' or whatever - all that data management stuff it tough for me to wrap my head around as I don't have the vocabulary to keep up in those kinds of discussions!
 
-##But it is not that simple
+#####But it is not that simple
 
 So even if #1 was simple enough, it gets more complicated than that. Enter... IPA.
 
@@ -59,10 +74,11 @@ We enter all those texts (transcriptions of verbal interactions...) and dictiona
 
 So glossa needs to help us move from phonetics, to an alphabet, to a lexicon, and then maybe later, on to a literacy program. More details below, but I think that just about scratches the surface of what this software needs to do!
 
-Proposed Glossa Human and Machine Process Workflow
-====
+***
 
-1. **Make Data** Enter the texts (and/or the tabular data?)
+#### Proposed Glossa Human and Machine Process Workflow
+
+1. **Make Data** Enter the texts (and/or tabular data?)
 	
 	* **UI for data entry needs to FEEL like writing code** to make experience more like you are entering data, and less like you are 'word-processing'. Monospace (UNICODE!) fonts, maybe line numbers, 
 	* **UTF/keyboard entry... 'TAB' for field change, 'shift-TAB' for 'New Entry'? (maybe a button UI element as well for this?)** _Text entry field must be smart. It should recognize IPA, and realize that what you are entering is RAW phonetic data, yet to be processed. This will affect where that data gets stored (phonetics, not phonemics or orthographic). 'shift-TAB' entries should probably have some subtle visual cue to the user that when they have a new blank screen now, they ENTERED their previous data, not deleted it or something._
@@ -90,8 +106,11 @@ Proposed Glossa Human and Machine Process Workflow
 
 4. **Discourse Analysis** Chart Discourse features of the language.
 
-Ideas for ease of IPA Input on iPad
-====
+
+***
+
+
+####Ideas for ease of IPA Input on iPad
 
 Bouncing this stuff back and forth a bit with some other linguists... 
 
