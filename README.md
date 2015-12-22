@@ -2,11 +2,19 @@
 
 Thanks for checking this out. We want to build a platform agnostic and (one day) feature rich alternative to [FLEx](https://github.com/sillsdev/FieldWorks) with [Electron](https://github.com/atom/electron). Currently, we're calling this tool *Corpus*.
 
-![Imaginary Mock-up](https://dl.dropboxusercontent.com/u/538337/Tumblr/Pane1%20Minimized.png)
+![What We're Imagining](https://dl.dropboxusercontent.com/u/538337/Tumblr/Pane1%20Minimized.png)
+
+Good Linguistics software is going to help Linguists/Lexicographers make Dictionaries/Lexicons of languages.
+
+We basically do this by entering 'data' - like dictionary 'entries' (i.e. cat = gato ... but there is lot's of meta data too. CAT is a noun, there could be conjugations / variations... etc.). Lexicons do the same thing as dictionaries, but at a deeper level. For example, '-ing' is a MORPHEME (the smallest unit of meaning). 'Runn-ing' is combination of 2 morphemes, a verb root and an affix (in this case, a suffix) [(run)+(-ing)]. Morphemes, too have lot's of metadata associated with them, and that all needs to get *figured out*, *recorded*, and sifted through, then potentially *reported* or published.
+
+We also need to enter longer 'texts',  and break those down grammatically/morphologically. Typically this is done with some 'interlinearization', and involves telling your software where all the morpheme breaks are, adding translation / gloss information, and filling out all the pertinent info for each morpheme (like kind, what other kinds it attaches to...). 
+
+Currently, the software standards now are 'FLEx', and... well... nothing else. this is SIL's Application for Windows/.NET, and is clunky and old... but does work. The app is free, and i think it is even open source! A Port to mac could be developed (quickly, even... with some good software engineers who know the mono framework). SIL has done a lot of work in the field of linguistics, and has developed all sorts of standards and software tools. Currently SILs apps kick out all sorts of XML files for data portability, and I think they have lots of documentation on how all that stuff gets put together. 
 
 ***
 
-The first step might be to build out something really similar to [Notational Velocity](https://github.com/scrod/nv) and [Atom](https://github.com/atom/atom) with Electron, and then add functionality from there. Might find help in [nvatom](https://github.com/seongjaelee/nvatom). 
+The first step might be to build out something really similar to [Notational Velocity](https://github.com/scrod/nv) and [Atom](https://github.com/atom/atom) with Electron, and then add functionality from there. Might find help in [nvatom](https://github.com/seongjaelee/nvatom). Could we make an app out of [Dillinger](https://github.com/joemccann/dillinger), and modify it to make it do what we want?
 
 Currently, there are some .js scripts to run at an input on a web page to produce some Markdown 'reports' on manually entered (pasted) data... This has already saved many hours for production of certain literacy materials. This tool is what you'll see here, styled with an old eversion of the lightweight [MUI CSS framework](https://github.com/muicss/mui).
 
@@ -14,7 +22,28 @@ Read a little blog post with a bit more information about what we're trying to d
 
 ***
 
-### Some Old notes
+##To-Do
+
+###v00.30
+* Actually build a cross-platform App with Electron from what we currently have. (This could already save some literacy developers time, and can be distributed and installed easily.)
+
+###v00.40
+* Add space around markdown headers in output
+* **Add Script:** Create A-Z Dictionary skeleton (alphabetized list of unique words)* **Add Script:** 'Pattern Finder' (find all n-grams)* **Add Script:** Character (and cluster?) Frequency (totals, and/or by MD section)
+
+###v00.50
+* Drag and drop txt files into source box* Maybe make output 'box' appear only when there is actually output to display. (Maybe some animation)
+* Drag and drop rtf files into source box
+* Drag and drop Word files into source box
+* Drag and drop 'file' or 'files' (more than 1) into source box for processing.
+
+###v00.60
+* Develop new UI with [Polymer](https://github.com/Polymer/polymer)
+* Maybe add charts? (google’s js charting libraries)
+
+***
+
+### Workflow
 
 1. Write stories in a 'text editor' interface
 2. Link media you transcribed stories from
@@ -49,20 +78,6 @@ Read a little blog post with a bit more information about what we're trying to d
 6.1 it'd be so tight to be able to mine your corpus for all sorts of frequency information, anything really. Really killer find/replace would be enough here, but the GUI would need to be right. We might want to see how often a letter ends a word, co-occurs with another letter, how often int occurs in the corpus... But this doesnt necessarily need to be a tool just for this little niche situation... If there was an atom package that made a few UI tweaks, had a few little extra bells and whistles... Could be perfect!
 
 ***
-
-#### Some older notes.
-
-Good Linguistics software is going to help Linguists/Lexicographers make Dictionaries/Lexicons of languages.
-
-We basically do this by entering 'data' - like dictionary 'entries' (i.e. cat = gato ... but there is lot's of meta data too, right? That is a noun, there might be conjugations... etc.). Lexicons do the same thing as dictionaries, but at a deeper level. For example, '-ing' is a MORPHEME in english... the smallest unit of meaning. Morphemes, too have lot's of metadata associated with them, and that all needs to get figured out, recorded, and sifted through. 'Runn-ing' is combination of 2 morphemes, a verb root and an affix (in this case, a suffix) [(run)+(-ing)]. 
-
-...But we also need to enter longer 'texts', (i.e. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ligula in mi vulputate gravida. Aliquam orci purus, cursus vitae aliquet quis, accumsan at sapien. Morbi arcu quam, dictum ac placerat non, blandit luctus ante. Donec eget libero nec velit faucibus ultricies vel a dolor. Curabitur ullamcorper posuere turpis non rutrum.) and break those down grammatically/morphologically. Typically this is done with some 'interlinearization', and involves telling your software where all the morpheme breaks are, and filling out all the pertinent info for each morpheme... kind, what other kinds it attaches to... etc. 
-
-Currently, the software standards now are 'FLEx', and... well... nothing else. this is SIL's Application for Windows/.NET, and is clunky and old... but does work. The app is free, and i think it is even open source! A Port to mac could be developed (quickly, even... with some good software engineers who know the mono framework). SIL has done a lot of work in the field of linguistics, and has developed all sorts of standards and software tools. Currently SILs apps kick out all sorts of XML files for data portability, and I think they have lots of documentation on how all that stuff gets put together. 
-
-My friend and I came up with a preliminary name for this piece of software... Glossa. Below, Is what I have been thinking through in terms of Glossa's Workflow... I can't really speak to the 'DB Schema' or whatever - all that data management stuff it tough for me to wrap my head around as I don't have the vocabulary to keep up in those kinds of discussions!
-
-#####But it is not that simple
 
 So even if #1 was simple enough, it gets more complicated than that. Enter... IPA.
 
