@@ -55,7 +55,10 @@ Util.txt = function(){
 
 	var regexIgnoreLine = /\n#.*/g 
 	var regexIgnoreChar = /[ \" \, \. \- \! \? \* \[ \] ]/g
+
+	// Internal Functions
 	
+		
 	// External Functions
 
 	var cleanText = function(txt) {
@@ -64,12 +67,17 @@ Util.txt = function(){
 		return txt;
 	}
 
-	return{ }
-}
+	var debugOut = function(txt) {
+		var debug = document.getElementById("debug");
+		debug.textContent = txt;
+	}
+
+	return{ cleanText:cleanText, debugOut:debugOut }
+}();
 
 // T E S T 
-var libs =  Util.fs.getLibraries();
-var lib = libs[3];
-var notes = Util.fs.getNotes(lib);
-var note = notes[0];
-console.log(Util.fs.getNoteContent(lib,note));
+// var libs =  Util.fs.getLibraries();
+// var lib = libs[3];
+// var notes = Util.fs.getNotes(lib);
+// var note = notes[0];
+// console.log(Util.fs.getNoteContent(lib,note));

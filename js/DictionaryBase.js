@@ -1,9 +1,11 @@
 DictionaryBase = function(){
-	var util = require("Util");
+	// var util = require("Util");
 
 	var exe = function(){
-		alert("Get");
+		Util.txt.debugOut("Get");
 	}
 
   	return{ exe:exe }
 }();
+
+// DictionaryBase.exe();
