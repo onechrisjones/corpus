@@ -1,3 +1,7 @@
+// Keep this in mind for the entirety of our javascript base: 
+// http://www.thinkful.com/learn/javascript-best-practices-1/#Allow-for-Configuration-and-Translation
+
+// L E G A C Y
 var Corpus = function() {
 
   // instantiate general properties on the object that we will always need:
@@ -38,3 +42,9 @@ function setOutputText(val) {
 function REload() {
   location.reload();
 }
+// E N D   L E G A C Y
+
+GuiController = function(){
+
+  return{ }
+}();

@@ -1,3 +1,5 @@
+// L E G A C Y
+
 function concordance() {
   var corpus = new Corpus(),
     stream = [],
@@ -29,3 +31,10 @@ function concordance() {
   var finalOutput = formattedOutput.join("\n");
   setOutputText(finalOutput);
 }
+
+// E N D   L E G A C Y
+
+Concordance = function(){
+
+  return{ }
+}();

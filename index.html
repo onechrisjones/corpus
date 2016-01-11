@@ -16,14 +16,13 @@
   <script src="js/mui.min.js" , "mui"></script>
 
   <!-- Assorted Scripts that make it all work -->
-  <script src="js/UI-Features.js" , "UI-Features"></script>
+  <script src="js/GuiController.js"></script>
+  <script src="js/Util.js"></script>
 
   <!-- Corpus Processing Scripts -->
-  <script src="js/concordance.js" , "concordance"></script>
-  <script src="js/sortedWordList.js" , "sortedWordList"></script>
-  <script src="js/characterFrequency.js" , "characterFrequency"></script>
-  <script src="js/n-grammer.js" , "n-grammer"></script>
-
+  <script src="js/Concordance.js"></script>
+  <script src="js/DictionaryBase.js"></script>
+  <script scr="js/PersistentWordPatterns.js"></script>
 </head>
 
 <body>
@@ -51,7 +50,7 @@
             </button>
             <ul class="mui-dropdown-menu">
               <li><a onclick="concordance()">Concordance</a></li>
-              <li><a href="sortedWordList()">Dictionary Base</a></li>
+              <li><a onclick="DictionaryBase.exe()">Dictionary Base</a></li>
               <li><a href="#">Character Frequency</a></li>
               <li><a href="#">Persistent Word Patterns</a></li>
             </ul>

@@ -1,0 +1,4 @@
+PersistentWordPatterns = function(){
+
+  return{ }
+}();
