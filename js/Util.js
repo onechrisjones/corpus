@@ -1,5 +1,7 @@
 Util = {};
 
+
+// F I L E   S T U F F
 Util.fs = function(){
 
 	// Internal Variables
@@ -49,22 +51,30 @@ Util.fs = function(){
 	return{getLibraries:getLibraries, getNotes:getNotes, getNoteContent:getNoteContent}
 }();
 
+// T E X T   S T U F F
 Util.txt = function(){
 
 	// Internal Variables
-
-	var regexIgnoreLine = /\n#.*/g 
-	var regexIgnoreChar = /[ \" \, \. \- \! \? \* \[ \] ]/g
+	var regexIgnoreLine = /\n*#.*/g; 
+	// var regexIgnoreChar = /[ \" \, \. \- \! \? \* \[ \] \d ]/g;
+	var regexIgnoreChar = /[^A-z\s]/g;
 
 	// Internal Functions
-	
 		
 	// External Functions
-
-	var cleanText = function(txt) {
+	var clean = function(txt) {
 		txt = txt.replace(regexIgnoreLine,"");
 		txt = txt.replace(regexIgnoreChar,"");
 		return txt;
+	}
+
+	// Takes an array of strings and removes duplicates
+	var unique = function(txtArray) {
+		var uniq = txtArray.reduce(function(a,b){
+		    if (a.indexOf(b) < 0 ) a.push(b);
+		    return a;
+	  	},[]);
+	  	return uniq;
 	}
 
 	var debugOut = function(txt) {
@@ -72,7 +82,22 @@ Util.txt = function(){
 		debug.textContent = txt;
 	}
 
-	return{ cleanText:cleanText, debugOut:debugOut }
+	var getInputText = function() {
+		var input = document.getElementById("inputTextbox");
+		return input.value;
+	}
+
+	var setOutputText = function(txt) {
+		var output = document.getElementById("outputTextbox");
+		output.value = txt;
+	}
+
+	var setInputText = function(txt) {
+		var input = document.getElementById("inputTextbox");
+		input.value = txt;
+	}
+
+	return{ clean:clean, unique:unique, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText}
 }();
 
 // T E S T 
