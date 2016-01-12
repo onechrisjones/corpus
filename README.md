@@ -21,8 +21,8 @@ Top Corpus Requirements:
   - [ ] find/replace w/ regex
   - [ ] data analysis toolbox:
     - [ ] Concordance - Show first occurance of each word in note selection (case sensative)
-    - [ ] Dictionary Base - Alphabetatical dictionary md template of each word (case insensative)
-    - [ ] Persistent Word Patterns - Count the number of times a ordered group of n words occurs 
+    - [x] Dictionary Base - Alphabetatical dictionary md template of each word (case insensative)
+    - [ ] Persistent Word Patterns - Count the number of times a ordered group of n words occurs (case insensative)
 
 Auxilary Features:
   - [ ] Markdown Preview
