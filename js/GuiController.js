@@ -1,4 +1,4 @@
-// Keep this in mind for the entirety of our javascript base: 
+// Keep this in mind for the entirety of our javascript base:
 // http://www.thinkful.com/learn/javascript-best-practices-1/#Allow-for-Configuration-and-Translation
 
 // L E G A C Y
