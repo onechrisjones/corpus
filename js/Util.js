@@ -1,5 +1,30 @@
 Util = {};
 
+// G E N E R A L   S T U F F
+Util.gen = function(){
+
+	function makeIterator(array){
+	    var nextIndex = 0;
+	    
+	    return {
+	       next: function(){
+	           return nextIndex < array.length ?
+	               {value: array[nextIndex++], done: false} :
+	               {done: true};
+	       }
+	    }
+	}
+
+	// Note mixed arrays might goof it up (eg 2="2"). Unless you dig that sorta thing
+	function unique(array) {
+	    var seen = {};
+	    return array.filter(function(item) {
+	        return seen.hasOwnProperty(item) ? false : (seen[item] = true);
+	    });
+	}
+
+	return{ makeIterator:makeIterator, unique:unique }
+}();
 
 // F I L E   S T U F F
 Util.fs = function(){
@@ -57,7 +82,7 @@ Util.txt = function(){
 	// Internal Variables
 	var regexIgnoreLine = /\n*#.*/g; 
 	// var regexIgnoreChar = /[ \" \, \. \- \! \? \* \[ \] \d ]/g;
-	var regexIgnoreChar = /[^A-z\s]/g;
+	var regexIgnoreChar = /[^A-Za-z \s']/g;
 
 	// Internal Functions
 		
@@ -65,17 +90,18 @@ Util.txt = function(){
 	var clean = function(txt) {
 		txt = txt.replace(regexIgnoreLine,"");
 		txt = txt.replace(regexIgnoreChar,"");
+		txt = txt.replace(/[\n\s\t]+/g," ");
 		return txt;
 	}
 
 	// Takes an array of strings and removes duplicates
-	var unique = function(txtArray) {
-		var uniq = txtArray.reduce(function(a,b){
-		    if (a.indexOf(b) < 0 ) a.push(b);
-		    return a;
-	  	},[]);
-	  	return uniq;
-	}
+	// var unique = function(txtArray) {
+	// 	var uniq = txtArray.reduce(function(a,b){
+	// 	    if (a.indexOf(b) < 0 ) a.push(b);
+	// 	    return a;
+	//   	},[]);
+	//   	return uniq;
+	// }
 
 	var debugOut = function(txt) {
 		var debug = document.getElementById("debug");
@@ -97,7 +123,7 @@ Util.txt = function(){
 		input.value = txt;
 	}
 
-	return{ clean:clean, unique:unique, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText}
+	return{ clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText}
 }();
 
 // T E S T 

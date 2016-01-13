@@ -13,7 +13,7 @@ DictionaryBase = function(){
 		return " * "+word+spaaace+":= ";
 	}
 
-	function formatSectionHeading(section) {
+	function formatSection(section) {
 		return "### "+section.toUpperCase();
 	}
 
@@ -28,7 +28,7 @@ DictionaryBase = function(){
 			cleanText = cleanText.replace(/[ ]{2,}/g," ");
 		var words = cleanText.split(" ");
 			words = words.sort();
-		return Util.txt.unique(words);
+		return Util.gen.unique(words);
 	}
 
 	function getLongestWord() {
@@ -42,7 +42,7 @@ DictionaryBase = function(){
 
 		var words = getWords();
 		var sectionIndex = 0;
-		if(words[0][0]==sections[0]) {dictionary += formatSectionHeading(sections[0])+"\n";}
+		if(words[0][0]==sections[0]) {dictionary += formatSection(sections[0])+"\n";}
 		// Build the dictionary
 		for (var i = 0; i < words.length; i++) {
 			var firstChar = words[i][0];
@@ -52,7 +52,7 @@ DictionaryBase = function(){
 			else {
 				if(sections.indexOf(firstChar)>=0) {
 					sectionIndex = sections.indexOf(firstChar);
-					dictionary += formatSectionHeading(sections[sectionIndex])+"\n";
+					dictionary += formatSection(sections[sectionIndex])+"\n";
 					dictionary += formatLine(words[i])+"\n";
 				}
 			}
