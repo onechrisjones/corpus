@@ -1,91 +1,116 @@
 <!doctype html>
-
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load MUI -->
+    <link href="//cdn.muicss.com/mui-0.2.9/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.2.9/js/mui.min.js"></script>
+    <!-- Jquery -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Ace editor for markdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ace.js"></script>
+    <!-- Google Material Design fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Main js file -->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id="sidedrawer" class="mui--no-user-select list-group">
+      <div id="sidedrawer-brand" class="mui--appbar-line-height mui--text-title">Corpus</div>
+      <div class="mui-divider"></div>
+      <ul>
+        <li>
+          <strong>Corpora</strong>
+          <ul>
+            <li><a href="#">Corpus (phonemic)</a></li>
+            <li><a href="#">Corpus (phonetic)</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Research Journal</strong>
+          <ul>
+            <li><a href="#">'Blog' Category A</a></li>
+            <li><a href="#">'Blog' tag B</a></li>
+          </ul>
+        </li>
+        <li>
+          <strong>Resources</strong>
+          <ul>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Language</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-<head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Corpus β - ][4cKy Corpus Processing</title>
-
-  <!-- MUI CSS Framework (css & js) -->
-  <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/custom.css" rel="stylesheet" type="text/css" />
-  <script src="js/mui.min.js" , "mui"></script>
-
-  <!-- Assorted Scripts that make it all work -->
-  <script src="js/GuiController.js"></script>
-  <script src="js/Util.js"></script>
-
-  <!-- Corpus Processing Scripts -->
-  <script src="js/Concordance.js"></script>
-  <script src="js/DictionaryBase.js"></script>
-  <script src="js/PersistentWordPatterns.js"></script>
-</head>
-
-<body>
-
-  <div class="mui-container">
-    <div class="mui-row">
-      <div class="mui-col-md-6">
-        <h1>Input</h1>
-        <div id="mui-panel" class="mui-panel" style="min-height:100px;">
-          <div class="mui-text-center">
-            <div class="mui-text-display1 mui-text-accent">Drag Corpus file(s) Here</div>
-            <div class="mui-text-subhead mui-text-accent">(.rtf, .doc, .txt, .md)</div>
-          </div>
-        </div>
-        <div class="mui-panel">
-          <form>
-            <!-- <legend>Paste Text</legend> -->
-            <div class="mui-form-group">
-              <textarea id="inputTextbox" class="mui-form-control" placeholder="Drop file(s) above, or paste stories (with Markdown (#) headings) in this box. Select a report to generate, and your corpus will be processed." style="min-height:300px;"></textarea>
-            </div>
-          </form>
-          <div class="mui-dropdown" style="float:right;">
-            <button class="mui-btn mui-btn-primary" data-mui-toggle="dropdown">Generate A Report
-              <span class="mui-caret"></span>
-            </button>
-            <ul class="mui-dropdown-menu">
-              <li><a onclick="concordance()">Concordance</a></li>
-              <li><a onclick="DictionaryBase.exe()">Dictionary Base</a></li>
-              <li><a href="#">Character Frequency</a></li>
-              <li><a onclick="PersistentWordPatterns.exe()">Persistent Word Patterns</a></li>
-            </ul>
-          </div>
+    <header id="header">
+      <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+          <table width="100%">
+            <tr style="vertical-align:middle;">
+              <td id = "appbar-toggle-cell" class="mui--appbar-height">
+                <a class="sidedrawer-toggle js-show-sidedrawer"><i class="material-icons">menu</i></a>
+              </td>
+              <td id = "search-cell" class="mui--appbar-height">
+                <div id = "search-wrapper" class="mui-textfield">
+                  <!-- <i class="material-icons">search</i> -->
+                  <input id = "search" type="text" placeholder="Search/Create">
+                </div>
+              </td>
+              <td class="mui--text-right" align="right">
+                <div class="mui-dropdown">
+                  <a id="appbar-more-vert"><i class="material-icons">info_outline</i></a>
+                  <a id="appbar-more-vert" data-mui-toggle="dropdown"><i class="material-icons">more_vert</i></a>
+                  <ul class="mui-dropdown__menu mui-dropdown__menu--right">
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
-      <div class="mui-col-md-6">
-        <h1>Output</h1>
-        <div class="mui-panel">
-          <form>
-            <!-- <legend>Report</legend> -->
-            <div class="mui-form-group">
-              <textarea id="outputTextbox" class="mui-form-control" placeholder="Markdown Report will load here after processing." style="min-height:420px;" readonly="readonly"></textarea>
-            </div>
-            <button type="submit" class="mui-btn mui-btn-accent mui-btn-flat" disabled="">Copy</button>
-            <div class="mui-dropdown" style="float:right;">
-              <button class="mui-btn mui-btn-primary" data-mui-toggle="dropdown">Download Report
-                <span class="mui-caret"></span>
-              </button>
-              <ul class="mui-dropdown-menu">
-                <li><a href="#">Markdown</a></li>
-                <li><a href="#">CSV</a></li>
-                <li><a href="#">JSON</a></li>
-              </ul>
-            </div>
-          </form>
-        </div>
+    </header>
+    <div id="content-wrapper">
+      <div id="list-view" class = "list-group">
+        <ul>
+          <strong>oto magiwe</strong>
+          <strong>Another file</strong>
+          <strong>Hey look! A third one</strong>
+          <strong>And even a fourth</strong>
+          <strong>Could it be?</strong>
+          <strong>More files!?!!</strong>
+        </ul>
+
+        <button id = "add-fab" class="mui-btn mui-btn--fab mui-btn--primary">+</button>
+
       </div>
-      <div class="mui-text-center">
-        <p id="debug"></p>
-        <button class="mui-btn mui-btn-floating mui-btn-floating-mini" onclick="REload()">⟳</button>
+      <div id = "content-section">
+        <div class="mui--appbar-height"></div>
+        <!-- Tabs bar -->
+        <ul id = "tabs" class="mui-tabs__bar mui-tabs__bar--justified">
+          <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="baseline-pane">BASELINE</a></li>
+          <li><a data-mui-toggle="tab" data-mui-controls="analyze-pane">ANALYZE</a></li>
+          <li><a data-mui-toggle="tab" data-mui-controls="chart-pane">TEXT CHART</a></li>
+        </ul>
+        <!-- Content -->
+        <div class="mui-container-fluid">
+
+          <div class="mui-tabs__pane mui--is-active content-section" id="baseline-pane"></div>
+          <div class="mui-tabs__pane content-section" id="analyze-pane">ANALYZE</div>
+          <div class="mui-tabs__pane content-section" id="chart-pane">TEXT CHART</div>
+
+        </div>
       </div>
     </div>
-  </div>
 
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,183 @@
+/**
+ * Body CSS
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #eee;
+}
+
+html,
+body,
+input,
+textarea,
+buttons {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+/**
+ * Layout CSS
+ */
+
+#header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: left 0.2s;
+}
+
+#sidedrawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  left: -250px;
+  overflow: auto;
+  z-index: 101;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+
+
+#list-view{
+  position: absolute;
+  left: 0;
+  top: 75px;
+  width: 250px;
+  z-index: 100;
+  height: calc(100% - 75px);
+  background-color: white;
+}
+
+.content-section{
+  position: absolute;
+  top: 125px;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: calc(100% - 125px);
+}
+
+#baseline-pane{
+  position: absolute;
+}
+
+#tabs{
+  position: absolute;
+  top: 75px;
+  left: 250px;
+  width: calc(100% - 250px);
+  z-index: 99;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.full-width{
+  left: 250px !important;
+}
+
+/**
+ * Toggle Sidedrawer
+ */
+#sidedrawer.active {
+  transform: translate(250px);
+}
+
+
+/**
+ * Header CSS
+ */
+
+header.mui--appbar-line-height{
+  line-height :64px !important;
+}
+
+@media(min-width: 480px){
+  header.mui--appbar-line-height{
+    line-height :64px !important;
+  }
+
+}
+
+.sidedrawer-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+}
+
+.sidedrawer-toggle:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#search-wrapper{
+  line-height: 40px;
+}
+
+#appbar-toggle-cell{
+  width: 40px;
+  padding-top: 10px;
+}
+
+#search-cell{
+  width: 300px;
+}
+
+#appbar-more-vert{
+  color: white;
+  cursor: pointer;
+}
+
+div.mui-dropdown{
+  padding-top: 10px;
+}
+
+
+/**
+ * Sidedrawer CSS
+ */
+
+#sidedrawer-brand {
+  padding-left: 20px;
+  height: 73px;
+}
+
+.list-group ul {
+  list-style: none;
+}
+
+.list-group > ul {
+  padding-left: 0px;
+}
+
+.list-group > ul > li:first-child {
+  padding-top: 15px;
+}
+
+.list-group strong {
+  display: block;
+  padding: 15px 22px;
+  cursor: pointer;
+}
+
+.list-group strong:hover {
+  background-color: #E0E0E0;
+}
+
+.list-group strong + ul > li {
+  padding: 6px 0px;
+}
+
+#add-fab{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
