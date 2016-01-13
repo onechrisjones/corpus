@@ -1,5 +1,12 @@
 {
-  "name"    : "Corpus",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "Corpus",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-prebuilt": "^0.36.3",
+    "jquery": "^2.2.0"
+  },
+  "scripts": {
+    "start": "node_modules/electron-prebuilt/dist/Electron.app/Contents/MacOS/Electron ."
+  }
 }

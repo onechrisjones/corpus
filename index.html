@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- load MUI -->
-    <link href="//cdn.muicss.com/mui-0.2.9/css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="//cdn.muicss.com/mui-0.2.9/js/mui.min.js"></script>
-    <!-- Jquery -->
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/mui.min.js"></script>
     <!-- Ace editor for markdown -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ace.js"></script>
     <!-- Google Material Design fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <!-- Assorted Scripts that make it all work -->
+    <script src="js/GuiController.js"></script>
+    <script src="js/Util.js"></script>
+
+    <!-- Corpus Processing Scripts -->
+    <script src="js/Concordance.js"></script>
+    <script src="js/DictionaryBase.js"></script>
+    <script src="js/PersistentWordPatterns.js"></script>
+
     <!-- Custom Styles -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Jquery -->
+    <script>
+      // Load w/ require to avoid conflict
+      window.$ = window.jQuery = require('jquery');
+    </script>
     <!-- Main js file -->
     <script src="js/script.js"></script>
   </head>
