@@ -24,6 +24,7 @@ DictionaryBase = function(){
 	function getWords() {
 		var raw = Util.txt.getInputText();
 		var cleanText = Util.txt.clean(raw);
+			cleanText = cleanText.toLowerCase();
 			cleanText = cleanText.replace(/[\t\s\n]/g," ");
 			cleanText = cleanText.replace(/[ ]{2,}/g," ");
 		var words = cleanText.split(" ");
@@ -42,20 +43,27 @@ DictionaryBase = function(){
 
 		var words = getWords();
 		var sectionIndex = 0;
-		if(words[0][0]==sections[0]) {dictionary += formatSection(sections[0])+"\n";}
 		// Build the dictionary
 		for (var i = 0; i < words.length; i++) {
 			var firstChar = words[i][0];
-			if(sections[sectionIndex]==firstChar) {
+			if(sections[sectionIndex]!=firstChar || (sections[sectionIndex]==firstChar && sectionIndex==0 && i==0)) { // Special case for section A
+				sectionIndex = sections.indexOf(firstChar)>-1 ? sections.indexOf(firstChar) : sectionIndex; // how to handle index==-1?
+				dictionary += formatSection(sections[sectionIndex])+"\n";
 				dictionary += formatLine(words[i])+"\n";
 			}
 			else {
-				if(sections.indexOf(firstChar)>=0) {
-					sectionIndex = sections.indexOf(firstChar);
-					dictionary += formatSection(sections[sectionIndex])+"\n";
-					dictionary += formatLine(words[i])+"\n";
-				}
+				dictionary += formatLine(words[i])+"\n";
 			}
+			// if(sections[sectionIndex]==firstChar && !(sectionIndex==0 && i==0)) { // Special case for section A
+			// 	dictionary += formatLine(words[i])+"\n";
+			// }
+			// else {
+			// 	if(sections.indexOf(firstChar)>-1) {
+			// 		sectionIndex = sections.indexOf(firstChar);
+			// 		dictionary += formatSection(sections[sectionIndex])+"\n";
+			// 		dictionary += formatLine(words[i])+"\n";
+			// 	}
+			// }
 		};
 
 		Util.txt.setOutputText(dictionary);
