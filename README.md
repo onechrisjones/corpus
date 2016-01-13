@@ -12,6 +12,18 @@ Corpus is a language documentation notebook for doing linguistic data analysis t
 	- [FAQ / Troubleshooting](#faq--troubleshooting)
 	- [License](#license)
 
+## Quick Setup
+*ToDo*
+
+## Screenshots
+*ToDo*
+
+## Features
+*ToDo*
+
+## API
+*ToDo*
+
 ## ToDo	
 Top Corpus Requirements:
 
@@ -28,3 +40,9 @@ Auxilary Features:
   - [ ] Markdown Preview
   - [ ] Regex Syntax Highlighting + Find Result Highlighting
   - [ ] Export to PDF and to HTML
+
+## FAQ / Troubleshooting
+*ToDo*
+
+## License
+See [LICENSE](LICENSE)
