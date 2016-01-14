@@ -10,16 +10,10 @@ Util = {};
 // - list lib
 // - choose notebook location
 
+// O N L O A D   S T U F F
 window,onload = function(){
-	var fileBrowser = document.getElementById("fileBrowser");
-	for (var i = 0; i < Util.fs.getNotes("shakespeare").length; i++) {
-		var note = Util.fs.getNotes("shakespeare")[i];
-		var li = document.createElement("li");
-		var strong = document.createElement("strong");
-		strong.appendChild(document.createTextNode(note));
-		li.appendChild(strong);
-		fileBrowser.appendChild(li);
-	};
+	var files = Util.fs.getNotes("shakespeare");
+	Util.txt.setFileBrowser(files);
 }
 
 // G E N E R A L   S T U F F
@@ -80,17 +74,17 @@ Util.fs = function(){
 
 	// External Functions
 
-	var getLibraries = function() {
+	function getLibraries() {
 		var notebookDir = path.join(root,notebook);
 		return getDirectories(notebookDir);
 	}
 
-	var getNotes = function(library) {
+	function getNotes(library) {
 		var libraryDir = path.join(root,notebook,library);
 		return getFiles(libraryDir);
 	}
 
-	var getNoteContent = function(library, note) {
+	function getNoteContent(library, note) {
 		var noteDir = path.join(root,notebook,library,note);
 		return getFileContent(noteDir);
 	}
@@ -149,7 +143,19 @@ Util.txt = function(){
 		input.value = txt;
 	}
 
-	return{ clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText}
+	var setFileBrowser = function(files) {
+		var fileBrowser = document.getElementById("fileBrowser");
+		for (var i = 0; i < files.length; i++) {
+			var note = files[i];
+			var li = document.createElement("li");
+			var strong = document.createElement("strong");
+			strong.appendChild(document.createTextNode(note));
+			li.appendChild(strong);
+			fileBrowser.appendChild(li);
+		};
+	}
+
+	return{ clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText, setFileBrowser:setFileBrowser }
 }();
 
 // T E S T 
