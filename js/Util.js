@@ -103,47 +103,38 @@ Util.txt = function(){
 	// Internal Functions
 		
 	// External Functions
-	var clean = function(txt) {
+	function clean(txt) {
 		txt = txt.replace(regexIgnoreLine,"");
 		txt = txt.replace(regexIgnoreChar,"");
 		txt = txt.replace(/[\n\s\t]+/g," ");
 		return txt;
 	}
 
-	// Takes an array of strings and removes duplicates
-	// var unique = function(txtArray) {
-	// 	var uniq = txtArray.reduce(function(a,b){
-	// 	    if (a.indexOf(b) < 0 ) a.push(b);
-	// 	    return a;
-	//   	},[]);
-	//   	return uniq;
-	// }
-
-	var debugOut = function(txt) {
+	function debugOut(txt) {
 		var debug = document.getElementById("debug");
 		debug.textContent = txt;
 	}
 
-	var getInputText = function() {
+	function getInputText() {
 		// var input = document.getElementById("inputTextbox");
 		// return input.value;
 		var editor = ace.edit('baseline-pane');
 		return editor.getValue();
 	}
 
-	var setOutputText = function(txt) {
+	function setOutputText(txt) {
 		// var output = document.getElementById("outputTextbox");
 		// output.value = txt;
 		var editor = ace.edit('baseline-pane');
 		editor.setValue(txt);		
 	}
 
-	var setInputText = function(txt) {
+	function setInputText(txt) {
 		var input = document.getElementById("inputTextbox");
 		input.value = txt;
 	}
 
-	var setFileBrowser = function(files) {
+	function setFileBrowser(files) {
 		var fileBrowser = document.getElementById("fileBrowser");
 		for (var i = 0; i < files.length; i++) {
 			var note = files[i];
