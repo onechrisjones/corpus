@@ -79,9 +79,9 @@
                   <a id="appbar-more-vert"><i class="material-icons">info_outline</i></a>
                   <a id="appbar-more-vert" data-mui-toggle="dropdown"><i class="material-icons">more_vert</i></a>
                   <ul class="mui-dropdown__menu mui-dropdown__menu--right">
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="#">Roadmap</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a onclick="DictionaryBase.exe()">Dictionary Base</a></li>
+                    <li><a onclick="concordance()">Concordance</a></li>
+                    <li><a onclick="PersistentWordPatterns.exe()">Persistent Word Patterns</a></li>
                     <li><a href="#">Feedback</a></li>
                   </ul>
                 </div>
@@ -93,15 +93,14 @@
     </header>
     <div id="content-wrapper">
       <div id="list-view" class = "list-group">
-        <ul>
-          <strong>oto magiwe</strong>
-          <strong>Another file</strong>
-          <strong>Hey look! A third one</strong>
-          <strong>And even a fourth</strong>
-          <strong>Could it be?</strong>
-          <strong>More files!?!!</strong>
+        <ul id="fileBrowser">
+         <!--  <li><strong>oto magiwe</strong></li>
+         <li><strong>Another file</strong></li>
+         <li><strong>Hey look! A third one</strong></li>
+         <li><strong>And even a fourth</strong></li>
+         <li><strong>Could it be?</strong></li>
+         <li><strong>More files!?!!</strong></li> -->
         </ul>
-
         <button id = "add-fab" class="mui-btn mui-btn--fab mui-btn--primary">+</button>
 
       </div>

@@ -1,5 +1,27 @@
 Util = {};
 
+
+// Todo
+// - Onload
+// - Write to specified file in a lib
+// - list files in fileBrowser
+// - onclick display file
+// - search files spec lib
+// - list lib
+// - choose notebook location
+
+window,onload = function(){
+	var fileBrowser = document.getElementById("fileBrowser");
+	for (var i = 0; i < Util.fs.getNotes("shakespeare").length; i++) {
+		var note = Util.fs.getNotes("shakespeare")[i];
+		var li = document.createElement("li");
+		var strong = document.createElement("strong");
+		strong.appendChild(document.createTextNode(note));
+		li.appendChild(strong);
+		fileBrowser.appendChild(li);
+	};
+}
+
 // G E N E R A L   S T U F F
 Util.gen = function(){
 
@@ -109,13 +131,17 @@ Util.txt = function(){
 	}
 
 	var getInputText = function() {
-		var input = document.getElementById("inputTextbox");
-		return input.value;
+		// var input = document.getElementById("inputTextbox");
+		// return input.value;
+		var editor = ace.edit('baseline-pane');
+		return editor.getValue();
 	}
 
 	var setOutputText = function(txt) {
-		var output = document.getElementById("outputTextbox");
-		output.value = txt;
+		// var output = document.getElementById("outputTextbox");
+		// output.value = txt;
+		var editor = ace.edit('baseline-pane');
+		editor.setValue(txt);		
 	}
 
 	var setInputText = function(txt) {
