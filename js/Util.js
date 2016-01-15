@@ -2,8 +2,6 @@ Util = {};
 
 
 // Todo
-// - Onload
-// - Write to specified file in a lib
 // - onclick display file
 // - search files spec lib
 // - list lib
@@ -91,6 +89,16 @@ Util.fs = function(){
 		return fs.readFileSync(srcpath, {encoding: 'utf-8'});
 	}
 
+	function writeFile(srcpath,content) {
+		fs.writeFile( srcpath, content, function(err) {
+		    if(err) {
+		        return console.log(err);
+		    }
+
+		    console.log("The file was saved!");
+		});
+	}
+
 	// External Functions
 
 	function getLibraries() {
@@ -108,7 +116,12 @@ Util.fs = function(){
 		return getFileContent(noteDir);
 	}
 
-	return{getLibraries:getLibraries, getNotes:getNotes, getNoteContent:getNoteContent}
+	function writeNote(library,note,content) {
+		var noteDir = path.join(root,notebook,library,note);
+		writeFile(noteDir,content);
+	}
+
+	return{getLibraries:getLibraries, getNotes:getNotes, getNoteContent:getNoteContent, writeNote:writeNote}
 }();
 
 // T E X T   S T U F F
