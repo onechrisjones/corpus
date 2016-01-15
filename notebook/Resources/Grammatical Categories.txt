@@ -1,0 +1,392 @@
+
+
+# Grammatical Categories #
+
+
+
+## Adjective ##
+
+An adjective is a part of speech whose members modify nouns. An adjective specifies the attributes of a noun referent. Note: this is one case among many. Adjectives are a class of modifiers.
+
+[^Crystal 1997:8  Mish et al. 1990:56  Payne 1997:63]
+
+
+## Adposition ##
+
+An adposition is a part of speech whose members are of a closed set and occur before or after a complement composed of a noun phrase, noun, pronoun, or clause that functions as a noun phrase and forms a single structure with the complement to express its grammatical and semantic relation to another unit within a clause.
+
+[^Comrie 1989:91  Crystal 1997: 305  Mish et al. 1990:929  Payne 1997:86]
+
+
+### Preposition ###
+
+A preposition is an adposition that occurs before its complement.
+
+[^Crystal 1997:305  Mish et al. 1990:929  Payne 1997:86]
+
+
+
+### Postposition ###
+
+A postposition is an adposition that occurs after its complement.
+
+[^Crystal 1997:300  Payne 1997:86]
+
+
+
+## Adverb ##
+
+An adverb, narrowly defined, is a part of speech whose members modify verbs for such categories as time, manner, place, or direction. An adverb, broadly defined, is a part of speech whose members modify any constituent class of words other than nouns, such as verbs, adjectives, adverbs, phrases, clauses, or sentences. Under this definition, the possible type of modification depends on the class of the constituent being modified.
+
+[^Crystal 1997:11  Mish et al. 1990:59  Payne 1997:69]
+
+
+## Classifier ##
+
+A classifier is a part of speech whose members express the classification of a noun.
+
+[^Crystal 1997:61  Mish et al. 1990:246  Payne 1997:107]
+
+
+### Noun Classifier ###
+
+A noun classifier is a part of speech whose members express the classification of a noun
+
+[^Cryustal 1997:61  Mish et al. 1990:246  Payne 1997:107]
+
+
+## Connective ##
+
+Also known as a conjunction, a connective is a class of parts of speech whose members syntactically link words or larger constituents, and expresses a semantic relationship between them. A conjunction is positionally fixed relative to one or more of the elements related by it, thus distinguishing it from constituents such as English conjunctive adverbs.
+
+[^Crystal 1997:81  Mish et al. 1990:277-278]
+
+
+### Coordinating Connective ###
+
+A coordinating connective is a connective that links constituents without syntactically subordinating one to the other.
+
+[^Crystal 1997:93  Mish et al. 1990:288]
+
+
+#### Correlating Connective ####
+
+A correlative connective is either of a pair of coordinating conjunctions (connectives) used in ordered fashion. Typically, one is used immediately before each member of a pair of constituents.
+
+[^Crystal 1997:96  Mish et al. 1990:293]
+
+
+### Subordinating Connective ###
+
+A subordinating connective is a connective that links constructions by making one of them a constituent of another. The subordinating conjunction typically marks the incorporated constituent.
+
+[^Crystal 1997:370  Mish et al. 1990:1175]
+
+
+#### Adverbializer ####
+
+An adverbializer is a subordinating connective that links a subordinate clause to a main clause, and indicates that the subordinate clause has an 'adverbial' or interpropositional relation to the main clause, indicating purpose, condition, time, and location.
+
+
+#### Complementizer ####
+
+A complementizer is a connective which marks a complement clause.
+
+[^Crystal 1997:75]
+
+
+#### Relativizer ####
+
+A relativizer is a subordinating connective that links a relative clause to its head noun. It is distinguishable from a relative pronoun in that it does not have a nominal function within the relative clause.
+
+[^Payne1997:332]
+
+
+## Determiner ##
+
+A determiner is a part of speech whose members belong to a class of noun modifiers and express the reference, including quantity, of a noun.
+
+[^Crystal 1997:112  Mish et al. 1990:346]
+
+
+### Article ###
+
+An article is a member of a small class of determiners that identify a noun's definite or indefinite reference, and new or given status.
+
+[^Crystal 1997:26  Mish et al. 1990:105]
+
+
+#### Definite Article ####
+
+A definite article is a part of speech whose members refer to a specific, identifiable entity (or class of entities).
+
+[^Crystal 1997:107]
+
+
+#### Indefinite Article ####
+
+An indefinite article is a part of speech whose members are used to refer to an entity (or class of entities) which is not capable of specific identification.
+
+[^Crystal 1997:193]
+
+
+### Demonstrative ###
+
+A demonstrative is a determiner that is used deictically to indicate a referent's spatial, temporal, or discourse location. A demonstrative functions as a modifier of a noun, or a pronoun.
+
+[^Crystal 1997:312  Mish et al. 1990:338]
+
+
+### Quantifier ###
+
+A quantifier is a determiner that expresses a referent's definite or indefinite number or amount. A quantifier functions as a modifier of a noun, or a pronoun.
+
+[^Crystal 1997:317  Mish et al. 1990:963]
+
+
+#### Numeral ####
+
+A numeral is a part of speech whose members function most typically as adjectives or pronouns and express a number, or relation to the number, such as one of the following: quantity, sequence, frequency, fraction.
+
+[^Hartmann and Stork 1972:155  Pei and Gaynor 1954:149]
+
+
+##### Cardinal #####
+
+A cardinal numeral is a numeral of the class whose members are considered basic in form, are used in counting, and are used in expressing how many objects are referred to.
+
+[^Crystal 1997:52  Mish et al. 1990:207]
+
+
+##### Distributive #####
+
+A distributive numeral is a numeral which expresses a group of the number specified.
+
+
+##### Multiplicative #####
+
+A multiplicative numeral is a numeral that expresses how many fold or how many times.
+
+[^Pei and Gaynor 1954:149  Hartmann and Stork 1972:147]
+
+
+##### Ordinal #####
+
+An ordinal numeral is a numeral belonging to a class whose members designate positions in a sequence.
+
+[^Crystal 1997:272  Mish et al. 1990:831]
+
+
+##### Partitive #####
+
+A partitive numeral is a numeral that expresses a fraction.
+
+[^Pei and Gaynor 1954:149  Hartmann and Stork 1972:165]
+
+
+## Existential Marker ##
+
+An existential marker is a part of speech whose members are found in distinct clause types and which mark a referent's existence.
+
+[^Crystal 1997:142]
+
+
+## Expletive ##
+
+An expletive (also known as a dummy word) is a part of speech whose members have no meaning, but complete a sentence to make it grammatical.
+
+[^Crystal 1997:127  Mish et al. 1990:437]
+
+
+## Interjection ##
+
+An interjection is a part of speech, typically brief in form, such as one syllable or word, whose members are used most often as exclamations or parts of an exclamation. An interjection, typically expressing an emotional reaction, often with respect to an accompanying sentence, is not syntactically related to other accompanying expressions, and may include a combination of sounds not otherwise found in the language.
+
+[^Crystal 1997:200]
+
+
+## Noun ##
+
+A noun is a broad classification of parts of speech which include substantives and nominals.
+
+[^Crystal 1997:371  Mish et al. 1990:1176]
+
+
+### Nominal ###
+
+A nominal is a part of speech whose members differ grammatically from a substantive but which functions as one.
+
+[^Crystal 1997:260  Mish et al. 1990:801]
+
+
+#### Gerund ####
+
+A part of speech derived from a verb and used as a noun, usually restricted to non-finite forms of the verb.
+
+[^Crystal 1997: 279]
+
+
+### Proper Noun ###
+
+Proper noun, also referred to as proper names, is the class of nouns that are used to address particular persons or culturally significant personages or places. They refer to specific entities and are not usually with articles, modifiers, or possessors.
+
+[^Payne 1997:39]
+
+
+### Substantive ###
+
+A substantive is a member of the syntactic class in which the names of physical, concrete, relatively unchanging experiences are most typically found whose members may act as subjects and objects, and most of whose members have inherently determined grammatical gender (in languages which inflect for gender).
+
+[^Crystal 1997:264  Mish et al. 1990:808  Givon 1984:51-52  Payne 1997:33]
+
+
+## Participle ##
+
+A participle refers to non-finite forms of verbs other than infinitive. In some uses it is restricted to those forms that are used as an adjective.
+
+[^Crystal 2008:352]
+
+
+## Particle ##
+
+A particle is a part of speech whose members do not belong to one of the main classes of words, is invariable, and typically has grammatical or pragmatic meaning.
+
+
+### Nominal ###
+
+A nominal particle is a member of a closed class of particles that co-occur with nouns.
+
+
+### Question ###
+
+A question particle is a part of speech whose members signal a yes/no .
+
+[^Payne 1997:296]
+
+
+### Verbal ###
+
+A verbal particle is a member of a closed class of particles which co-occur with some verbs to form phrasal verbs. In some languages, verbal particles are identical to certain adpositions
+
+
+## Prenoun ##
+
+An element which may be compounded to the front of a noun to signal information such as size, color, etc..
+
+[^Valentine 2001: 152-154]
+
+
+## Preverb ##
+
+An element which may be compounded to the front of a verb, to signal information such as tense, direction, etc..
+
+[^Valentine 2001: 154-158]
+
+
+## Pro-Form ##
+
+A pro-form is a part of speech whose members usually substitute for other constituents, including phrases, clauses, or sentences, and whose meaning is recoverable from the linguistic or extralinguistic context.
+
+[^Schachter 1985:24-25  Crystal 1997:310]
+
+
+### Interrogative pro-form ###
+
+ An interrogative pro-form is a pro-form that is used in questions to stand for the item questioned
+
+
+### Pro-Adjective ###
+
+A pro-adjective is a pro-form that substitutes for an adjective or adjective phrase.
+
+
+### Pro-Adverb ###
+
+A pro-adverb is a pro-form that substitutes for an adverb or other expression having an adverbial function.
+
+
+### ProNoun ###
+
+A pronoun is a pro-form which functions like a noun and substitutes for a noun or noun phrase.
+
+[^Crystal 1997:312  Mish et al. 1990:942]
+
+
+#### Indefinite Pronoun ####
+
+An indefinite pronoun is a pronoun that belongs to a class whose members indicate indefinite reference.
+
+[^Crystal 1997: 312  Mish et al. 1990:612]
+
+
+#### Personal Pronoun ####
+
+A personal pronoun is a pronoun that expresses a distinction of person deixis.
+
+[^Mish et al. 1990:878]
+
+
+##### Emphatic #####
+
+An emphatic pronoun is a personal pronoun that is used to emphasize its referent.
+
+
+##### Possessive #####
+
+A possessive pronoun is a pronoun that expresses ownership and relationships like ownership, such as kinship, and other forms of association.
+
+[^Crystal 1997:312  Mish et al. 1990:918]
+
+
+##### Reflexive #####
+
+A reflexive pronoun is a pronoun that has coreference with the subject.
+
+[^Mish et al. 1990:990]
+
+
+#### Reciprocal ####
+
+A reciprocal pronoun is a pronoun that expresses a mutual feeling or action among the referents of a plural subject.
+
+[^Crystal 1997:323  Mish et al. 1990:982]
+
+
+#### Relative ####
+
+A relative pronoun is a pronoun that marks a relative clause, functions grammatically within the relative clause, and is coreferential to the word modified by the relative clause.
+
+[^Crystal 1997:329]
+
+
+## Verb ##
+
+A verb is a part of speech whose members typically signal events and actions; constitute, singly or in a phrase, a minimal predicate in a clause; govern the number and types of other constituents which may occur in the clause; and, in inflectional languages, may be inflected for tense, aspect, voice, modality, or agreement with other constituents in person, number, or grammatical gender.
+
+[^Crystal 1997:409  Mish et al. 1990:1309  Givon 1984:52  Payne 1997:47  Alvarez 1905:103]
+
+
+### Copulative ###
+
+A type of verb, eg, 'seem' and 'appear'
+
+
+### Ditransitive ###
+
+A ditransitive verb is a verb that takes two objects.
+
+[^Crystal 1997:397]
+
+
+### Intransitive ###
+
+An intransitive verb is a verb that cannot take a direct object, and describes a property, state, or situation involving only one participant.
+
+[^Crystal 1997:397  Payne 1997:171]
+
+
+### Transitive ###
+
+A transitive verb is a verb that takes a direct object, and describes a relation between two participants.
+
+[^Crystal 1997:397  Mish et al. 1990:1254  Payne 1997:171]

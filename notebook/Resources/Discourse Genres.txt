@@ -1,0 +1,178 @@
+
+
+# Discourse Genres #
+
+
+
+## Dialogue ##
+
+Literal speech between individuals or quoted text that uses quotation formulas (typically using the verb 'to say')
+
+
+
+### Conversation ###
+
+Dialogue involving mutual cooperation between the speakers
+
+
+
+### Conflict ###
+
+Dialogue involving mutual cooperation between the speakers
+
+
+
+### Negotiation ###
+
+Dialogue in which a speaker seeks to obtain a benefit from the other speaker
+
+
+
+### Drama ###
+
+Acted out speech or quoted text that does not use quotation formulas
+
+
+
+## Monologue ##
+
+A text with a single participant, typically a narrator addressing an audience
+
+
+
+### Narrative ###
+
+An account of events, a text that describes or projects a contingent succession of actions
+
+
+
+#### History ####
+
+An account of real events
+
+
+
+#### Fiction ####
+
+An account of invented events
+
+
+
+#### Traditional Narrative ####
+
+A traditional account of events of unknown historicity
+
+
+
+#### Prophecy ####
+
+An account of events that are projected to happen at a later time, typically involving a supernatural agency
+
+
+
+### Procedure ###
+
+A text that describes or explains a process
+
+
+
+#### Descriptive ####
+
+Describes how something was done
+
+
+
+#### Prescriptive ####
+
+Gives instructions about how to do something
+
+
+
+### Behavioral Text ###
+
+A text that motivates or describes behavior without a framework of contingent succession
+
+
+
+#### Hortatory ####
+
+A text intended to motivate the audience to do something or to act or to believe in a particular way; a.k.a. Motivational Text
+
+
+
+#### Normative ####
+
+A text intended to express the norms of a society for the purpose of motivating someone to conform to those norms
+
+
+
+#### Promissory ####
+
+A text in which the originator promises to do something or to act or to believe in a particular way
+
+
+
+#### Behavioural Description ####
+
+A text, such as a Eulogy, that describes the accomplishments of a person without a contingent succession of actions
+
+
+
+### Exposition ###
+
+A text that explains something other than a behavior, a process or a succession of events; typically it explains facts or ideas
+
+
+
+#### Projection ####
+
+A text dealing with projected facts or planned status (not a proposal for action, which would be Hortatory; not focusing on human or divine agency, which would be Prophecy)
+
+
+
+#### Descriptive ####
+
+Exposition that describes an object, location or situation in static terms
+
+
+
+#### Didactic ####
+
+Exposition specifically intended for teaching another person about a body of facts
+
+
+
+## Metrical Category ##
+
+Genre according to metrical form (versus content)
+
+
+
+### Prose ###
+
+Non-metrical arrangement of the text, typically using the grammar of ordinary speech
+
+
+
+### Poetry ###
+
+Metrical arrangement of the text, typically employing rules for rhyme and rhythm
+
+
+
+## Word List ##
+
+A list of words used for language research or documentation
+
+
+
+### Paradigm ###
+
+A list of well-formed words, typically arranged according to inflection
+
+
+
+### Ill-formed Words ###
+
+A list of words that are not well-formed in the language, e.g. an anti-paradigm or list of common misspellings
+

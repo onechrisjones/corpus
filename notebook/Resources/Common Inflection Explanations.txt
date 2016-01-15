@@ -1,0 +1,1290 @@
+
+
+# Common Inflection Explanations #
+
+
+
+## Noun ##
+
+
+
+### gender ###
+
+
+
+#### masculine ####
+
+
+
+#### feminine ####
+
+
+
+#### neuter ####
+
+
+
+### number ###
+
+
+
+#### singular ####
+
+
+
+#### plural ####
+
+
+
+#### dual ####
+
+
+
+#### trial ####
+
+
+
+#### paucal ####
+
+
+
+### noun class ###
+
+
+
+#### animate ####
+
+
+
+#### human ####
+
+
+
+#### inanimate ####
+
+
+
+#### ? ####
+
+
+
+### Bantu noun class ###
+
+
+
+#### Gender 1/2 ####
+
+Gender 1/2 is a grammatical gender that (1) marks nouns that refer to human beings, and (2) may mark nouns having referents that are not human beings. Nouns marked for gender 1/2 can be singular (class 1) or plural (class 2). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 1 are mʊ- / jʊ- / ʊ-; for class 2 they are ba- / bá- / bá-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+
+#### Gender 1a ####
+
+Gender 1a is a grammatical gender that (1) marks nouns that are proper names, kinship terms, or personifications and (2) may mark nouns having referents that are not proper names.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467]
+
+
+
+#### Gender 3/4 ####
+
+Gender 3/4 is a grammatical gender that (1) marks nouns that are non-human living things ('semi-animates'): trees, plants, spirits, natural phenomena, e.g., fire, smoke, river, objects associated with these things; things made of wood, etc., and (2) may mark nouns having referents that are not non-human living things. It also may mark body parts.. Nouns marked for gender 3/4 can be singular (class 3) or plural (class 4). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 3 are mʊ- / gʊ- / ʊ-; for class 4 they are mɪ- / gɪ- / ɪ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.
+
+
+
+#### Gender 5/6 ####
+
+Gender 5/6 is a grammatical gender that (1) marks nouns that are paired objects, animals, body parts, collective nouns, undesirable people, augmentatives, derogatives, or fruits, and (2) may mark nouns having referents that are none of these. Nouns marked for gender 5/6 can be singular (class 5) or plural (class 6). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 5 are i- / lɪ- / lɪ-; for class 6 they are ma- / gá- / á-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 6a ####
+
+Gender 6a is a grammatical gender that (1) marks nouns that are mass nouns, liquids, time references, mannerisms, or modes of action and (2) may mark nouns having referents that are none of these. Nouns marked for gender 6a do not have a singular/plural distinction.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467.]
+
+
+
+#### Gender 7/8 ####
+
+Gender 7/8 is a grammatical gender that (1) marks nouns that are artifacts, defective human beings, body parts, tools, instruments, utensils, animals, insects, languages, diseases, outstanding people, amelioratives, derogatives, augmentatives, curatives (shortness and stoutness), or mannerisms, and (2) may mark nouns having referents that are none of these. Nouns marked for gender 7/8 can be singular (class 7) or plural (class 8). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 7 are kɪ- / kɪ- / kɪ-; for class 8 they are bi- / bi- / bi-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 9/10 ####
+
+Gender 9/10 is a grammatical gender that (1) marks nouns that are animals, special kinds of people, body parts, tools, instruments, or household effects and (2) may mark nouns having referents that are none of these. Nouns marked for gender 9/10 can be singular (class 9) or plural (class 10). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 9 are N- / jɪ- / ɪ-; for class 10 they are N- / jɪ- / í-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 11/10 ####
+
+Gender 11/10 is a grammatical gender that (1) marks nouns that are long, thin objects, languages, body parts, natural phenomena, implements, utensils or other artifacts and (2) may mark nouns having referents that are none of these. Nouns marked for gender 11/10 can be singular (class 11) or plural (class 10). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 11 are lʊ- / lʊ- / lʊ-; for class 10 they are N- / jɪ- / í-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.
+
+
+
+#### Gender 12/13 ####
+
+Gender 12/13 is a grammatical gender that (1) marks nouns that are diminutives, augmentatives, derogatives, or amelioratives and (2) may mark nouns having referents that are none of these. Nouns marked for gender 12/13 can be singular (class 12) or plural (class 13). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 12 are ka- / ká- / ká-; for class 13 they are tʊ- / tʊ- / tʊ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54]
+
+
+
+#### Gender 14/6 ####
+
+Gender 14/6 is a grammatical gender that (1) marks nouns that are abstract or collectives, and (2) may mark nouns having referents that are neither abstract nor collective. Nouns marked for gender 14/6 can be singular (class 14) or plural (class 6). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 14 are bʊ- / bʊ- / bʊ-; for class 6 they are ma- / gá- / á-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.
+
+
+
+#### Gender 14 ####
+
+Gender 14 is a grammatical gender that (1) marks nouns that are abstract or collectives, and (2) may mark nouns having referents that are neither abstract nor collective. Nouns marked for gender 14 do not have a singular/plural distinction. The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 14 are bʊ- / bʊ- / bʊ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 15/6 ####
+
+Gender 15/6 is a grammatical gender that (1) marks nouns that are paired body parts, and (2) may mark nouns having referents that are not paired body parts. Nouns marked for gender 15/6 can be singular (class 15) or plural (class 6). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 15 are kʊ- / kʊ- / kʊ-; for class 6 they are ma- / gá- / á-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54]
+
+
+
+#### Gender 15 ####
+
+Gender 15 is a grammatical gender that marks infinitives. Nouns marked for gender 15 do not have a singular/plural distinction. The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 15 are kʊ- / kʊ- / kʊ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 19/13 ####
+
+Gender 19/13 is a grammatical gender that (1) marks nouns that are diminutives, and (2) may mark nouns having referents that are not diminutives. Nouns marked for gender 19/13 can be singular (class 19) or plural (class 13). The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 19 are pi- / pí- / pí-; for class 13 they are tʊ- / tʊ- / tʊ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 16 ####
+
+Gender 16 is a grammatical gender that has a locative sense. The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 16 are pa- / pá- / pá-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 17 ####
+
+Gender 17 is a grammatical gender that has a locative sense. The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 17 are kʊ- / kʊ- / kʊ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### Gender 18 ####
+
+Gender 18 is a grammatical gender that has a locative sense. The Proto-Bantu nominal, pronominal, and enumerative prefixes for class 18 are mʊ- / mʊ- / mʊ-.
+[^Katamba 2003:114ff;
+Hinnebusch 1989:466-467,
+Gardner 2005:54.]
+
+
+
+#### ? ####
+
+
+
+### case ###
+
+Case is a grammatical category determined by the syntactic or semantic function of a noun or pronoun.
+
+
+
+#### ablative ####
+
+Ablative case is a case that expresses a variety of meanings including instrument, cause, location, source, and time.
+[^Crystal 1980:7
+Hartmann and Stork 1972:1]
+
+
+
+#### absolutive ####
+
+Absolutive case is the case of nouns in ergative-absolutive languages that would generally be the subjects of intransitive verbs or the objects of transitive verbs in the translational equivalents of nominative-accusative languages such as English.
+[^Anderson, Stephen 1985:181
+Crystal 1985:1
+Andrews, Avery 1985:138]
+
+
+
+#### accusative ####
+
+Accusative case is the case in nominative-accusative languages that marks certain syntactic functions, usually direct objects.
+[^Hartmann and Stork 1972:3,156
+Crystal 1980:11,246
+Andrews, Avery 1985:75
+Anderson, Stephen 1985:181
+Mish et al. 1990:50]
+
+
+
+#### allative ####
+
+Allative case is a case that expresses motion to or toward the referent of the noun it marks.
+[^Pei and Gaynor 1954:6,9,216
+Lyons 1968:299
+Crystal 1985:12-13
+Gove, et al. 1966:55,2359]
+
+
+
+#### benefactive ####
+
+Benefactive case is a case that expresses that the referent of the noun it marks receives the benefit of the situation expressed by the clause.
+[^Crystal 1980:43
+Gove, et al. 1966:203]
+
+
+
+#### dative ####
+
+Dative case is a case that marks any of the following: (1) Indirect objects (for languages in which they are held to exist); (2) Nouns having the role of (a) recipient (as of things given), (b) beneficiary of an action, or (c) possessor of an item.
+[^Crystal 1980:102
+Gove, et al. 1966:577]
+
+
+
+#### ergative ####
+
+Ergative case is the case of nouns in ergative-absolutive languages that would generally be the subjects of transitive verbs in the translation equivalents of nominative-accusative languages such as English.
+[^Crystal 1980:134
+Hartmann and Stork 1972:78
+Pei and Gaynor 1954:67
+Andrews, Avery 1985:138]
+
+
+
+#### genetive ####
+
+Genitive case is a case in which the referent of the marked noun is the possessor of the referent of another noun.
+[^Crystal 1980:161
+Hartmann and Stork 1972:94-95,180
+Pei and Gaynor 1954:82,172
+Anderson, Stephen 1985:185
+Mish et al. 1990:511
+Fleming 1988:10]
+
+
+
+#### illative ####
+
+Illative case is a case that expresses motion into or direction toward the referent of the noun it marks.
+[^Lyons 1968:299
+Gove, et al. 1966:1126
+Crystal 1985:152]
+
+
+
+#### instrumental ####
+
+Instrumental case is a case indicating that the referent of the noun it marks is the means of the accomplishment of the action expressed by the clause.
+[^Crystal 1980:187
+Hartmann and Stork 1972:114
+Mish et al. 1990:627]
+
+
+
+#### locative ####
+
+Locative case is a case that expresses location at the referent of the noun it marks.
+[^Crystal 1980:214-215
+Mish et al. 1990:701
+Lyons 1968:299
+Crystal 1985:7
+Gove, et al. 1966:25]
+
+
+
+#### nominative ####
+
+Nominative case is the case that identifies clause subjects in nominative-accusative languages. Nouns used in isolation have this case.
+[^Crystal 1980:242
+Pei and Gaynor 1954:147
+Mish et al. 1990:801
+Hartmann and Stork 1972:224]
+
+
+
+#### oblique ####
+
+Oblique case is the case that refers collectively to all the case forms of a word except the unmarked case (usually nominative).
+[^Crystal 1997:267]
+
+
+
+#### vocative ####
+
+Vocative case is a case that marks a noun whose referent is being addressed.
+[^Crystal 1980:377
+Hartmann and Stork 1972:251
+Pei and Gaynor 1954:228]
+
+
+
+#### less common ####
+
+
+
+##### abessive #####
+
+Abessive case is a case that expresses the lack or absence of the referent of the noun it marks. It has the meaning of the English preposition without.
+[^Pei and Gaynor 1954:3,35
+Gove, et al. 1966:3]
+
+
+
+##### causative #####
+
+Causative case is a case which expresses that the referent of the noun it marks is the cause of the situation expressed by the clause.
+[^Pei and Gaynor 1954:36
+Andrews, Avery 1985:95
+Gove, et al. 1966:356]
+
+
+
+##### comitative #####
+
+Comitative case is a case expressing accompaniment. It carries the meaning "with" or "accompanied by."
+[^Anderson, Stephen 1985:186
+Pei and Gaynor 1954:42
+Dixon, R. 1972:12
+Gove, et al. 1966:455]
+
+
+
+##### delative #####
+
+Delative case is a case which expresses motion downward from the referent of the noun it marks.
+[^Pei and Gaynor 1954:53
+Gove, et al. 1966:595]
+
+
+
+##### elative #####
+
+Elative case is a case expressing motion out of or away from the referent of the noun it marks.
+[^Lyons 1968:299
+Pei and Gaynor 1954:64
+Crystal 1985:106
+Gove, et al. 1966:730]
+
+
+
+##### equative #####
+
+Equative case is a case that expresses likeness or identity to the referent of the noun it marks. It can have meaning, such as English "as," "like," and "in the capacity of."
+
+
+
+##### essive #####
+
+Essive case is a case that expresses the temporary state of the referent specified by a noun. The case has the meaning of (1) while, and (2) in the capacity of.
+[^Lyons 1968:299,301
+Gove, et al. 1966:778
+Crystal 1985:112]
+
+
+
+##### inessive #####
+
+Inessive case is a case that expresses a location within the referent of the noun it marks.
+[^Lyons 1968:299
+Gove, et al. 1966:1156
+Crystal 1985:156]
+
+
+
+##### lative #####
+
+Lative case is a case that expresses motion (1) up to the location of, or (2) as far as the referent of the noun it marks.
+[^Pei and Gaynor 1954:121, Gove, et al. 1966:1277]
+
+
+
+##### partitive #####
+
+Partitive case is a case that expresses the partial nature of the referent of the noun it marks, as opposed to expressing the whole unit or class of which the referent is a part. This case may be found in items such as the following: (1) Existential clauses, (2) Nouns that are accompanied by numerals or units of measure, or (3) Predications of material from which something is made. It often has a meaning similar to the English word "some."
+[^Pei and Gaynor 1954:161
+Richards, Platt, and Weber 1985:208
+Quirk, et al. 1985:249
+Gove, et al. 1966:1648
+Sebeok 1946:12-14]
+
+
+
+##### prolative #####
+
+Prolative case is a case that expresses motion along or by the referent of the noun it marks.
+[^Pei and Gaynor 1954:176-177
+Sebeok 1946:7,14
+Merlan 1982:57-59,79
+Andrews, Avery 1985:92-93
+Gove, et al. 1966:1683]
+
+
+
+##### superessive #####
+
+Superessive case is a case that expresses location on the referent of the noun it marks. It has the meaning of "on" or "upon."
+[^Pei and Gaynor 1954:207
+Gove, et al. 1966:2293]
+
+
+
+##### translative #####
+
+Translative case is a case indicating that the referent of the noun, or the quality of the adjective, that it marks is the result of a process of change.
+[^Lyons 1968:299-301
+Gove, et al. 1966:813,2429
+Sebeok 1946:17
+Hakulinen 1961:70]
+
+
+
+## Verb ##
+
+
+
+### tense ###
+
+Tense is a grammatical category, typically marked on the verb, that deictically refers to the time of the event or state denoted by the verb in relation to some other temporal reference point.
+[^Crystal 1980:352-353
+Givón 1984:272
+Hartmann and Stork 1972:235
+Nida 1949:167
+Comrie 1985b:9
+Mish et al. 1990:1216]
+
+
+
+#### absolute ####
+
+Absolute tense is a tense that refers to a time in relation to the moment of utterance.
+
+
+
+##### nearfuture #####
+
+Near future tense (also called close future tense) is a tense that refers to a time shortly after the moment of utterance.
+[^Dahl 1985:121
+Comrie 1985b:94]
+
+
+
+##### future #####
+
+Future tense is an absolute tense that refers to a time after the moment of utterance.
+[^Hartmann and Stork 1972:92
+Mish et al. 1990:500]
+
+
+
+##### hesternalpast #####
+
+Hesternal past tense is a past tense that refers to a time that is located somewhere in the span beginning with the period defined culturally as "yesterday" and extends back through some period that is considered nonremote.
+[^Comrie 1985b:87-88
+Dahl 1985:126]
+
+
+
+##### hodiernalfuture #####
+
+Hodiernal future tense is a future tense that refers to a time that is located after the moment of utterance within the span culturally defined as "today."
+
+
+
+##### hodiernalpast #####
+
+Hodiernal past tense is a past tense that refers to a time as located before the moment of utterance within the span culturally defined as "today."
+[^Comrie 1985b:87
+Dahl 1985:125-126]
+
+
+
+##### immediatepast #####
+
+Immediate past tense is past tense that refers to a time considered very recent in relation to the moment of utterance.
+
+
+
+##### nonfuture #####
+
+Nonfuture tense is an absolute tense that (1) refers to a time at or before the moment of utterance, and (2) contrasts with a future tense.
+
+
+
+##### nonpast #####
+
+Nonpast tense is an absolute tense that (1) refers to a time at or after the moment of utterance, and (2) contrasts with a past tense.
+[^Hartmann and Stork 1972:153
+Comrie 1985b:48-49]
+
+
+
+##### nonrecent past #####
+
+Nonrecent past tense is a past tense that refers to a time before the range of a contrasting recent past tense.
+
+
+
+##### nonremote past #####
+
+Nonremote past tense is a past tense that refers to a time considered not more than a few days ago, in contrast to a remote past tense.
+
+
+
+##### not-yet #####
+
+Not-yet tense is an absolute tense that refers to times at and before the moment of utterance in asserting the present and past nonoccurrence of an event or state. It tends to imply that the event or state is expected to occur in the future. This tense corresponds to the meaning of the English not yet.
+
+
+
+##### past #####
+
+Past tense is an absolute tense that refers to a time before the moment of utterance.
+[^Hartmann and Stork 1972:166
+Pei and Gaynor 1954:162
+Mish et al. 1990:861]
+
+
+
+##### post-hodiernalfuture #####
+
+Post-hodiernal future tense is a future tense that refers to a time, in relation to the moment of utterance, after the span that is culturally defined as "today."
+
+
+
+##### predictivefuture #####
+
+Predictive future tense is a future tense, used in predictions, that does not express intention.
+
+
+
+##### prehesternalpast #####
+
+Prehesternal past tense is a past tense that refers to a time in some span before that of an opposing hesternal past tense.
+
+
+
+##### prehodiernalpast #####
+
+Prehodiernal past tense is a past tense that refers to a time in some span before that of a contrasting hodiernal past tense.
+
+
+
+##### present #####
+
+Present tense is an absolute tense that refers to the moment of utterance. It often refers to events or states that do not merely coincide with the moment of utterance, such as those that are (1) continuous, (2) habitual, or (3) lawlike.
+[^Hartmann and Stork 1972:183
+Comrie 1985b:36-40
+Mish et al. 1990:930]
+
+
+
+##### preterit #####
+
+A preterit, in traditional terminology, is a simple past tense not marked for aspect or modality.
+[^Hartmann and Stork 1972:184
+Crystal 1987:428
+Mish et al. 1990:932
+Richards, Platt, and Weber 1985:209]
+
+
+
+##### recentpast #####
+
+Recent past tense is a past tense that refers to a time, culturally and situationally defined, within the span ranging from yesterday to a week or a few months previous.
+[^Comrie 1985b:87
+Dahl 1985:121-122]
+
+
+
+##### remotefuture #####
+
+Remote future is a future tense that refers to a time that is considered relatively distant. It is characteristically after the span of time culturally defined as "tomorrow."
+[^Dahl 1985:121
+Comrie 1985b:94]
+
+
+
+##### remotepast #####
+
+Remote past tense is a past tense that refers to a time considered more than a few days ago.
+[^Dahl 1985:121
+Comrie 1985b:88]
+
+
+
+##### still #####
+
+Still tense is an absolute tense carrying the presupposition that an event or state held before the moment of utterance.In positive declarative clauses, still tense asserts that the event or state holds at the moment of utterance.
+
+
+
+#### absolute-relative ####
+
+Absolute-relative tense is a tense (1) that refers to a time in relation to a temporal reference point that, in turn, is referred to in relation to the moment of utterance, (2) in which the time and the reference point are not identical, and (3) the reference point and the moment of utterance are not identical.
+
+
+
+##### future perfect #####
+
+Future perfect tense is an absolute-relative tense that refers to a time located before a contextually determined temporal reference point that must be located in the future relative to the moment of utterance.
+[^Comrie 1985b:69-71
+Mish et al. 1990:501]
+
+
+
+##### future-in-future #####
+
+Future-in-future tense is an absolute-relative tense that refers to a time located in the future, relative to a temporal reference point that itself is located in the future relative to the moment of utterance.
+
+
+
+##### future-in-past #####
+
+Future-in-past tense is an absolute-relative tense that refers to a time located in the future, relative to a contextually determined temporal reference point that itself must be located in the past relative to the moment of utterance.
+
+
+
+##### future-perfect-in-past #####
+
+Future-perfect-in-past tense is an absolute-relative tense that involves three points in time in the past. The tense refers to a time that is in the future, relative to another point in the past, but is in the past relative to a point in its future. All these points in time are in the past relative to the moment of utterance.
+
+
+
+##### past perfect #####
+
+Past perfect tense is an absolute-relative tense that refers to a time in the past relative to a reference point, which itself is in the past relative to the moment of utterance.
+[^Pei and Gaynor 1954:162,170
+Mish et al. 1990:861
+Comrie 1985b:65-66]
+
+
+
+#### relative ####
+
+Relative tense is a tense that refers to a time in relation to a contextually determined temporal reference point, regardless of the latter's temporal relation to the moment of utterance.
+
+
+
+##### relative future #####
+
+Relative future tense is a relative tense that refers to a time located after a contextually determined temporal reference point, regardless of the latter's relation to the moment of utterance.
+
+
+
+##### relative nonfuture #####
+
+Relative nonfuture tense is a relative tense that refers to a time simultaneous to, or before, a contextually determined temporal reference point, regardless of the latter's relation to the moment of utterance.
+
+
+
+##### relative nonpast #####
+
+Relative nonpast tense is a relative tense that refers to a time simultaneous to, or after, a contextually determined temporal reference point, regardless of the latter's relation to the moment of utterance.
+
+
+
+##### relative past #####
+
+Relative past tense is a relative tense that refers to a time located before that of a contextually determined temporal reference point.
+
+
+
+##### relative present #####
+
+Relative present tense is a relative tense that refers to a time that is simultaneous with some contextually determined temporal reference point.
+
+
+
+### aspect ###
+
+Aspect is a grammatical category associated with verbs that expresses a temporal view of the event or state expressed by the verb.
+[^Lyons 1977b:705
+Chung and Timberlake 1985:213
+Talmy 1985:77
+Elson and Pickett 1988:26-27
+Comrie 1976a:3
+Quirk, et al. 1985:188
+Hartmann and Stork 1972:20
+Crystal 1987:415
+Mish et al. 1990:108]
+
+
+
+#### aorist ####
+
+
+
+#### atelic ####
+
+A term used in the grammatical analysis of aspect, to refer to an event where the activity has no clear terminal point. They contrast with telic verbs.
+[^Crystal 1997:33]
+
+
+
+#### attenuative ####
+
+A term sometimes used in grammar and semantics, referring to a reduced quality or quantity of the state or activity expressed by the verb ('a little', 'less'). In some languages (e.g., Hungarian) the contrast is a formal part of the aspect system.
+[^Crystal 1997:33]
+
+
+
+#### cessative ####
+
+Cessative aspect is aspect that expresses the cessation of an event or state.
+[^Pei and Gaynor 1954:37
+Nida 1949:168
+Elson and Pickett 1988:28
+Anderson, Judi Lynn 1989:12]
+
+
+
+#### completive ####
+
+
+
+#### continuous ####
+
+Continuous aspect is an imperfective aspect that expresses an ongoing, but not habitual, occurrence of the state or event expressed by the verb.
+[^Comrie 1976a:12,26
+Dahl 1985:94
+Bills, Vallejo, and Troike 1969:21]
+
+
+
+#### distributive ####
+
+Distributive aspect is an iterative aspect which expresses that an event is applied to members of a group one after another. These members are typically the referents named by (1) the subject of an intransitive verb, or (2) the object of a transitive verb.
+[^Pei and Gaynor 1954:59
+Comrie 1985a:344]
+
+
+
+#### durative ####
+
+Used in grammatical analysis of aspect, to refer to an event involving a period of time (cf. 'continuous', 'progressive'); it contrasts with 'non-durative' or 'punctual'.
+[^Crystal 1997:128]
+
+
+
+#### frequentative ####
+
+Used in the grammatical classification of verbs to refer to the expression of repeated action. In some languages (e.g. Russian) the class may be marked morphologically, but in English the meaning is normally expressed through adverbials of frequency, e.g. again, regularly, often.
+[^Crystal 1997:159]
+
+
+
+#### habitual ####
+
+Habitual aspect is an imperfective aspect that expresses the occurrence of an event or state as characteristic of a period of time.
+[^Comrie 1976a:27-28
+Dahl 1985:97
+Hartmann and Stork 1972:21
+Crystal 1987:422]
+
+
+
+#### imperfective ####
+
+Imperfective aspect is an aspect that expresses an event or state, with respect to its internal structure, instead of expressing it as a simple whole.
+[^Ducrot and Todorov 1979:307
+Pei and Gaynor 1954:97
+Comrie 1976a:24-25,41-42
+Crystal 1985:153
+Mish et al. 1990:604]
+
+
+
+#### inceptive ####
+
+Used to refer to a type of aspectual relationship in which the beginning of an action is specified. Same as 'inchoative'.
+[^Crystal 1997:192]
+
+
+
+#### incohative ####
+
+Inchoative aspect is an aspect that expresses the beginning of an event or state.
+[^Crystal 1980:34,181
+Pei and Gaynor 1954:98
+Nida 1949:168
+Bybee 1985:147-148
+Mish et al. 1990:608-609]
+
+
+
+#### iterative ####
+
+Iterative aspect is an aspect that expresses the repetition of an event or state.
+[^Comrie 1985a:343
+Mish et al. 1990:643
+Crystal 1985:167]
+
+
+
+#### perfective ####
+
+Perfective aspect is an aspect that expresses a temporal view of an event or state as a simple whole, apart from the consideration of the internal structure of the time in which it occurs.
+[^Comrie 1976a:12,18-19
+Ducrot and Todorov 1979:307
+Pei and Gaynor 1954:164
+Hartmann and Stork 1972:20
+Bybee 1985:142
+Elson and Pickett 1988:28
+Crystal 1985:224
+Mish et al. 1990:872]
+
+
+
+#### progressive ####
+
+Progressive aspect is a continuous aspect that expresses processes, not states.
+[^Richards, Platt, and Weber 1985:231
+Chung and Timberlake 1985:215
+Comrie 1976a:12,33-36
+Crystal 1987:428
+Mish et al. 1990:940]
+
+
+
+#### punctual ####
+
+Used in analysis of aspect to refer to a momentary event, thought of as having no temporal duration; it thus contrasts with durative or continuous events, where a period of time is involved.
+
+
+
+#### resultative ####
+
+A term used in grammatical analysis of aspect, to express consequence or effect.
+[^Crystal 1997:332]
+
+
+
+#### stative ####
+
+[^Crystal 1997:361-2]
+
+
+
+#### telic ####
+
+A term used in grammatical analysis of aspect, to refer to an event where the activity has a clear terminal point. These verbs contrast with atelic verbs.
+[^Crystal 1997:348]
+
+
+
+### mood ###
+
+Mood is one of a set of distinctive forms that are used to signal modality. Modality is a facet of illocutionary force, signaled by grammatical devices (that is, moods), that expresses (1) the illocutionary point or general intent of a speaker, or (2) a speaker's degree of commitment to the expressed proposition's believability, obligatoriness, desirability, or reality.
+[^Chung and Timberlake 1985:241
+Givón 1984:272
+Palmer 1986:14-15,26
+Bybee 1985:169
+Quirk, et al. 1985:219
+Crystal 1985:198
+Hartmann and Stork 1972:142,144
+Richards, Platt, and Weber 1985:183
+Mish et al. 1990:762,770]
+
+
+
+#### alethic ####
+
+Alethic modality is modality that connotes the speaker's estimation of the logical necessity or possibility of the proposition expressed by his utterance.
+[^Crystal 1985:12
+Palmer 1986:10-11
+Lyons 1977b:788-791]
+
+
+
+#### assumptive ####
+
+Assumptive mood is an epistemic mode that signals the speaker's belief that his statement is based on facts about what is usually the case in such circumstances.
+
+
+
+#### auditory ####
+
+An auditory evidential is a nonvisual evidential that signals that the speaker's evidence for the truth of his statement is based on what he has heard.
+
+
+
+#### commissive ####
+
+Commissive modality is a deontic modality that connotes the speaker's expressed commitment, as a promise or threat, to bring about the proposition expressed by the utterance.
+
+
+
+#### conditional ####
+
+Conditional mood signals hypotheses or conditions.
+[^Crystal 1997:80]
+
+
+
+#### declarative ####
+
+Declarative mood is an epistemic mood that signals that the proposition expressed by a speaker's utterance is offered as an unqualified statement of fact.
+[^Palmer 1986:26-27
+Sadock and Zwicky 1985:165-166
+Hartmann and Stork 1972:144
+Crystal 1980:85
+Palmer 1986:70,83
+Pei and Gaynor 1954:99
+Crystal 1980:183
+Mish et al. 1990:613]
+
+
+
+#### deductive ####
+
+Deductive mood is an epistemic mood that signals that the speaker judges from other facts that the proposition expressed by his utterance is probably true.
+
+
+
+#### deliberative ####
+
+Deliberative mood is a directive mood which signals the speaker's request for instruction from the addressee as to whether to do the proposition expressed in the utterance.
+[^Palmer 1986:107-108
+Bliese 1981:146]
+
+
+
+#### deontic ####
+
+Deontic modality is modality that connotes the speaker's (1) degree of requirement of, (2) desire for, or (3) commitment to the realization of the proposition expressed by the utterance.
+[^Crystal 1985:88
+Chung and Timberlake 1985:246-247
+Palmer 1986:10-11,15,96-97,115]
+
+
+
+#### directive ####
+
+Directive modality is a deontic modality that connotes the speaker's degree of requirement of conformity to the proposition expressed by an utterance.
+[^Palmer 1986:97-98
+Crystal 1980:95
+Quirk, et al. 1985:78]
+
+
+
+#### dubiative ####
+
+Dubitative mood is an epistemic mood which signals a speaker's reservation about the accuracy of his or her statement.
+[^Nida 1949:169
+Bybee 1985:179]
+
+
+
+#### epistemic ####
+
+Epistemic modality is a modality that connotes how much certainty or evidence a speaker has for the proposition expressed by his or her utterance.
+[^Crystal 1985:110
+Chung and Timberlake 1985:242
+Bybee 1985:165-166
+Palmer 1986:10-11,5]
+
+
+
+#### evidentiality ####
+
+Evidentiality is an epistemic modality that connotes the speaker's assessment of the evidence for his or her statement. An evidential is a form, such as a verbal affix, that is a grammatical expression of evidentiality.
+[^Bybee 1985:184
+Palmer 1986:66-67
+Givón 1984:307-308]
+
+
+
+#### hypothetical ####
+
+Hypothetical mood is an epistemic mood that signals that the speaker evaluates a proposition as counterfactual, but otherwise possible.
+[^Noonan 1985:95
+Chung and Timberlake 1985:243
+Boas and Deloria 1941:112]
+
+
+
+#### immediate-imperative ####
+
+Immediate imperative mood is an imperative mood that signals that the command or request is to be carried out right away.
+[^Sadock and Zwicky 1985:178
+Schachter and Otanes 1972:403]
+
+
+
+#### imperative ####
+
+Imperative mood is mood that signals directive modality, especially in commands. Its use may be extended to signal permission.
+[^Hartmann and Stork 1972:108
+Chung and Timberlake 1985:247
+Bybee 1985:171
+Palmer 1986:29,97,108,111
+Mish et al. 1990:603
+Crystal 1980:153
+Quirk, et al. 1985:78,803]
+
+
+
+#### imprecative ####
+
+Imprecative mood is a volitive mood that signals the speaker's wish that an unfavorable proposition will come about.
+[^Lewis, G.L. 1967:115, cited by Sadock and Zwicky 1985:163]
+
+
+
+#### indicative ####
+
+Indicative mood is used with statements and questions.
+[^Crystal 1997:194]
+
+
+
+#### interrogative ####
+
+An interrogative mood is an epistemic mood that signals that the speaker wishes to elicit information concerning the content of his or her utterance from the addressee.
+[^Nida 1949:168
+Palmer 1986:30-31]
+
+
+
+#### irrealis ####
+
+Irrealis modality is a modality that connotes that the proposition with which it is associated is nonactual or nonfactual.
+[^Noonan 1985:96
+Chung and Timberlake 1985:241]
+
+
+
+#### judgement ####
+
+Judgment modality is an epistemic modality that connotes the speaker's (1) strength of inference, or (2) degree of confidence in the reality of the proposition expressed by his or her utterance.
+
+
+
+#### jussive ####
+
+Jussive mood is a directive mood that signals a speaker's (1) command, (2) permission, or (3) agreement that the proposition expressed by his or her utterance be brought about.
+[^Chung and Timberlake 1985:247
+Mish et al. 1990:655
+Pei and Gaynor 1954:110
+Palmer 1986:10,24,39-40,96,110,113]
+
+
+
+#### necessity ####
+
+Necessity is a degree of contingency in modality that (1) in alethic modality connotes logical requirement, (2) in deontic modality connotes obligation, and (3) in epistemic modality connotes certainty.
+[^Chung and Timberlake 1985:242,246
+Lyons 1977b:791]
+
+
+
+#### nonvisual ####
+
+A nonvisual evidential is a sensory evidential that signals that the speaker's evidence for the truth of his or her statement is derived from a sense other than sight
+
+
+
+#### obligative ####
+
+Obligative mood is a directive mood that signals the speaker's estimation of the necessity that the proposition expressed in his or her utterance be brought about.
+[^Nida 1949:169
+Chung and Timberlake 1985:247
+Palmer 1986:98
+Sharma 1982:189-190]
+
+
+
+#### optative ####
+
+Optative mood is a volitive mood that signals wishing or hoping.
+[^Chung and Timberlake 1985:247
+Nida 1949:168
+Pei and Gaynor 1954:54,154-155
+Bybee 1985:166
+Mish et al. 1990:828
+Quirk, et al. 1985:839
+Palmer 1986:116-118
+Crystal 1985:90]
+
+
+
+#### permissive ####
+
+Permissive mood is a directive mood that signals the speaker's act of giving permission.
+[^Pei and Gaynor 1954:165
+Chung and Timberlake 1985:247]
+
+
+
+#### possible ####
+
+Possibility is a degree of contingency in modality that (1) in alethic modality connotes logical possibility, (2) in deontic modality connotes permission, and (3) in epistemic modality connotes uncertainty or speculation.
+[^Chung and Timberlake 1985:242,246
+Lyons 1977b:791
+Crystal 1985:12]
+
+
+
+#### precative ####
+
+Precative mood is a directive mood that signals that the utterance is a request.
+[^Pei and Gaynor 1954:173
+Palmer 1986:10]
+
+
+
+#### prohibitive ####
+
+Prohibitive mood is a directive mood that signals a prohibition. It is distinguished by (1) the use of a negated imperative sentence that employs a negative marker distinct from that used in declarative sentences, or (2) a verb form different from that of the imperative.
+[^Pei and Gaynor 1954:176,228
+Bybee 1985:173
+Hartmann and Stork 1972:185
+Sadock and Zwicky 1985:175-176]
+
+
+
+#### quotative ####
+
+A quotative evidential is an evidential that signals that someone else is the source of the statement made.
+[^Chung and Timberlake 1985:244
+Nida 1949:169
+Palmer 1986:7,71
+Dahl 1985:150-151
+Faust 1973]
+
+
+
+#### realis ####
+
+Realis modality is a modality that connotes the factuality of a proposition.
+[^Noonan 1985:96
+Chung and Timberlake 1985:241
+Pei and Gaynor 1954:99
+Crystal 1980:183
+Mish et al. 1990:613]
+
+
+
+#### sensory-evidential ####
+
+A sensory evidential is an evidential signaling that the speaker's evidence for the truth of his or her statement is derived from the speaker's own sensory experience.
+
+
+
+#### speculative ####
+
+Speculative mood is an epistemic mood that signals that the speaker judges from certain facts that the proposition expressed by his or her utterance is possibly true.
+
+
+
+#### subjunctive ####
+
+mood is a mood that typically signals irrealis meanings, such as (1) potentiality, (2) uncertainty, (3) prediction, (4) obligation, and (5) desire. It most typically occurs in a subordinate clause, but may occur outside of one.
+[^Nida 1949:169
+Pei and Gaynor 1954:205
+Bybee 1985:186
+Crystal 1980:338
+Hartmann and Stork 1972:224
+Lyons 1977b:817,848
+Mish et al. 1990:1174]
+
+
+
+#### visual-evidential ####
+
+A visual evidential is a sensory evidential signaling that the speaker's evidence for the truth of his or her statement is derived from the speaker's own sight.
+
+
+
+#### volitive ####
+
+Volitive modality is a deontic modality that expresses the speaker's attitude of hope, wish, or fear concerning the proposition expressed by the utterance.
+[^Pei and Gaynor 1954:229
+Palmer 1986:116-117]
+
+
+
+### polarity ###
+
+Polarity is a grammatical category that distinguishes affirmative and negative.
+[^Schachter 1985:10
+Talmy 1985:131]
+
+
+
+#### affirmative ####
+
+
+
+#### negative ####
+
+
+
+### transitivity ###
+
+Transitivity is the number of objects a verb requires or takes in a given instance.
+
+
+
+#### ditransitivity ####
+
+Ditransitivity is a term which describes a verb or clause which takes two objects.
+
+
+
+#### intransitivity ####
+
+Intransitivity is a term that describes a verb or clause that is unable to take a direct object.
+
+
+
+#### transitive ####
+
+A transitive verb is a verb that takes a direct object.

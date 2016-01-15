@@ -1,0 +1,108 @@
+
+
+# Morpheme Types #
+
+
+
+## Compound ##
+
+
+
+## Contraction ##
+
+
+
+## Derivative ##
+
+
+
+## Idiom ##
+
+
+
+## Phrasal Verb ##
+
+
+
+## Saying ##
+
+
+
+## stem ##
+
+
+
+## root ##
+
+
+
+## affix ##
+
+
+
+### suffix ###
+
+
+
+### prefix ###
+
+
+
+### infix ###
+
+
+
+### circumfix ###
+
+
+
+### infixing interfix ###
+
+
+
+### prefixing interfix ###
+
+
+
+### suffixing interfix ###
+
+
+
+### suprafix ###
+
+
+
+## clitic ##
+
+
+
+### enclitic ###
+
+
+
+### proclitic ###
+
+
+
+### simulfix ###
+
+
+
+## *bound root ##
+
+
+
+## *bound stem ##
+
+
+
+## particle ##
+
+
+
+## phrase ##
+
+
+
+## discontiguous phrase ##
+

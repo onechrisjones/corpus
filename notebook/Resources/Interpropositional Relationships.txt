@@ -1,0 +1,195 @@
+
+
+# Interpropositional Relationships #
+
+
+
+## Referential Relationships ##
+
+The relationship of the actual events to each other; presenting the content as making sense
+
+
+### Time ###
+
+
+
+#### Sequential ####
+
+One event occurs after another...
+
+
+#### Simultaneous ####
+
+Multiple events occurring concurrently (depending on the language, varying levels of overlap may be referenced and encoded in varying ways)
+
+
+#### Causal Allusion ####
+
+
+
+##### Stimulus&Response #####
+
+One event initializes another, without explicitly causing it.
+
+
+### Cause ###
+
+
+
+#### Reason&Result ####
+
+
+
+#### Means&Result ####
+
+
+
+#### Means&Purpose ####
+
+
+
+#### Condition&Consequence ####
+
+
+
+#### Associated Condition(&Consequence) ####
+
+
+
+#### Grounds&Coclusion ####
+
+
+
+#### Grounds&Exhortation ####
+
+
+
+#### Concession&Contraexpectation ####
+
+
+
+#### Alternation ####
+
+
+
+## Reporting Relationships ##
+
+Reporting what something says or thinks
+
+
+### Orienter Speech ###
+
+
+
+### Orienter Cognition ###
+
+
+
+### Quotation Source ###
+
+
+
+### Possible Confusion ###
+
+Adds emphasis, confirmation, or intensification
+
+
+## Presentational Relationships ##
+
+Relating support material to the core message
+
+
+### Associative ###
+
+
+
+#### Equivalence ####
+
+Recapitulates information adding ONLY vividness or prominence
+
+
+#### Compatibility ####
+
+Relates to some previously established or cultural pattern of expectation
+
+
+##### Additive #####
+
+
+
+##### Proportionality #####
+
+
+
+##### Incongruity #####
+
+
+
+#### Classification ####
+
+
+
+#### Amplification ####
+
+
+
+#### Comparison ####
+
+Some similar characteristic or quality in multiple things is addressed
+
+
+##### Head&Literal #####
+
+'Literally' similar
+
+
+##### Head&Illustrative #####
+
+Similar via illustration
+
+
+##### Head&Contrastive #####
+
+a difference between things is noted
+
+
+### Monitoring ###
+
+Assist audience with comprehension
+
+
+#### Assisting Comprehension ####
+
+
+
+##### Setting&Head #####
+
+
+
+##### Circumstantial&Head #####
+
+
+
+##### Signpost&Head #####
+
+
+
+#### Correcting Misunderstanding ####
+
+
+
+##### Misunderstanding&Correction #####
+
+
+
+##### Head&Explanation #####
+
+
+
+##### Head&Restriction #####
+
+
+
+### Authorial Comment (HEAD) ###
+
+When a message sender personally expresses within the context of  the message he is giving.
