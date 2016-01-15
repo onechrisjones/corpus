@@ -8,9 +8,12 @@
   "followLeader": false,
   "lintScripts": false,
   "modelSource": null,
-  "preprocessorLocations": null,
+  "preprocessorLocations": [
+    "materialize-src/sass",
+    "sass"
+  ],
   "preprocessorScriptOutput": null,
-  "preprocessorStyleOutput": null,
+  "preprocessorStyleOutput": "css",
   "projectDescription": "My project description",
   "projectName": "corpus",
   "publishedId": null,
