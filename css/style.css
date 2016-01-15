@@ -1,183 +1,90 @@
-/**
- * Body CSS
- */
+/* General styles */
 
-html,
-body {
+
+.no-padding{
+  padding: 0px;
+}
+
+.no-margin{
+  margin: 0px;
+}
+
+.full-height{
   height: 100%;
-  background-color: #eee;
 }
 
-html,
-body,
-input,
-textarea,
-buttons {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+/* Navigation styles */
+
+#navbar-search{
+  width: calc(100% - 180px);
 }
 
-
-/**
- * Layout CSS
- */
-
-#header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 100;
-  transition: left 0.2s;
+.input-field input[type=search]:focus{
+  background-color: #D5555A;
 }
 
-#sidedrawer {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 250px;
-  left: -250px;
-  overflow: auto;
-  z-index: 101;
-  background-color: #fff;
-  transition: transform 0.2s;
+.side-nav li{
+  padding: 0;
+  line-height: 45px;
+  height: 45px;
 }
 
+.side-nav li a{
+  line-height: 45px;
+  height: 45px;
+}
 
+.side-nav li.logo{
+  color:rgba(0, 0, 0, 0.87);
+  padding-left: 10px;
+  line-height: 64px;
+  height: 64px;
+  font-weight: 300;
+  font-size: 30px;
+  border-bottom: 1px solid #e0e0e0;
+}
 
-#list-view{
-  position: absolute;
-  left: 0;
-  top: 75px;
-  width: 250px;
-  z-index: 100;
-  height: calc(100% - 75px);
+.side-nav li.logo:hover{
   background-color: white;
 }
 
+#sidenav-button{
+
+}
+
+/* List view styles */
+
+#list-view{
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  width: 250px;
+  z-index: 2;
+  height: calc(100% - 64px);
+}
+
+.no-margin .collection{
+  border-radius: 0;
+}
+
+.collection-item{
+  height: 48px;
+}
+
+/* Content styles */
+
 .content-section{
   position: absolute;
-  top: 125px;
   left: 250px;
+  top: 112px;
   width: calc(100% - 250px);
-  height: calc(100% - 125px);
+  height: calc(100% - 112px);
 }
 
-#baseline-pane{
-  position: absolute;
-}
+/* Tab styles */
 
-#tabs{
+.tabs{
   position: absolute;
-  top: 75px;
   left: 250px;
-  width: calc(100% - 250px);
-  z-index: 99;
-  background-color: #fff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.full-width{
-  left: 250px !important;
-}
-
-/**
- * Toggle Sidedrawer
- */
-#sidedrawer.active {
-  transform: translate(250px);
-}
-
-
-/**
- * Header CSS
- */
-
-header.mui--appbar-line-height{
-  line-height :64px !important;
-}
-
-@media(min-width: 480px){
-  header.mui--appbar-line-height{
-    line-height :64px !important;
-  }
-
-}
-
-.sidedrawer-toggle {
-  color: #fff;
-  cursor: pointer;
-  font-size: 20px;
-  line-height: 20px;
-  margin-right: 10px;
-}
-
-.sidedrawer-toggle:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-#search-wrapper{
-  line-height: 40px;
-}
-
-#appbar-toggle-cell{
-  width: 40px;
-  padding-top: 10px;
-}
-
-#search-cell{
-  width: 300px;
-}
-
-#appbar-more-vert{
-  color: white;
-  cursor: pointer;
-}
-
-div.mui-dropdown{
-  padding-top: 10px;
-}
-
-
-/**
- * Sidedrawer CSS
- */
-
-#sidedrawer-brand {
-  padding-left: 20px;
-  height: 73px;
-}
-
-.list-group ul {
-  list-style: none;
-}
-
-.list-group > ul {
-  padding-left: 0px;
-}
-
-.list-group > ul > li:first-child {
-  padding-top: 15px;
-}
-
-.list-group strong {
-  display: block;
-  padding: 15px 22px;
-  cursor: pointer;
-}
-
-.list-group strong:hover {
-  background-color: #E0E0E0;
-}
-
-.list-group strong + ul > li {
-  padding: 6px 0px;
-}
-
-#add-fab{
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
+  width: calc(100% - 250px) !important;
 }
