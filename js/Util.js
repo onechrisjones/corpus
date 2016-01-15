@@ -4,7 +4,6 @@ Util = {};
 // Todo
 // - Onload
 // - Write to specified file in a lib
-// - list files in fileBrowser
 // - onclick display file
 // - search files spec lib
 // - list lib
@@ -14,11 +13,20 @@ Util = {};
 window,onload = function(){
 	var files = Util.fs.getNotes("shakespeare");
 	Util.txt.setFileBrowser(files);
-	Util.markdown.createEditor();
+	Util.gen.createEditor();
 }
 
 // G E N E R A L   S T U F F
 Util.gen = function(){
+
+	var marked = require('marked');
+
+	// External Functions
+	function render(markdownText){
+		var renderedHTML = marked(markdownText);
+		var preview = document.getElementById('preview');
+		preview.innerHTML = renderedHTML;
+	}
 
 	function makeIterator(array){
 	    var nextIndex = 0;
@@ -40,36 +48,17 @@ Util.gen = function(){
 	    });
 	}
 
-	return{ makeIterator:makeIterator, unique:unique }
-}();
-
-// R E N D E R I N G
-
-Util.markdown = function(){
-
-	var marked = require('marked');
-
-	// Internal Functions
-
-	function render(editor){
-		var renderedHTML = marked(editor.getValue());
-		var preview = document.getElementById('preview');
-		preview.innerHTML = renderedHTML;
-	}
-
-	// External Functions
-
 	function createEditor(){
 		// Set up ace editor
 	  var editor = ace.edit('baseline');
 	  editor.getSession().setMode("ace/mode/markdown");
 		editor.on('change', function(){
-			render(editor);
+			render(editor.getValue());
 		});
 		return editor;
 	}
-
-	return {createEditor: createEditor}
+	
+	return{ render:render, makeIterator:makeIterator, unique:unique, createEditor:createEditor }
 }();
 
 // F I L E   S T U F F
@@ -146,17 +135,14 @@ Util.txt = function(){
 	}
 
 	function getInputText() {
-		// var input = document.getElementById("inputTextbox");
-		// return input.value;
 		var editor = ace.edit('baseline');
 		return editor.getValue();
 	}
 
 	function setOutputText(txt) {
-		// var output = document.getElementById("outputTextbox");
-		// output.value = txt;
-		var editor = ace.edit('analysis');
-		editor.setValue(txt);
+		// var editor = ace.edit('analyze');
+		// editor.setValue(txt);
+		Util.gen.render(txt);
 	}
 
 	function setInputText(txt) {
