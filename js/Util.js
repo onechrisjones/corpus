@@ -9,13 +9,18 @@ Util = {};
 
 // O N L O A D   S T U F F
 window,onload = function(){
+	Util.gen.createEditor();
+	
 	var libs = Util.fs.getLibraries();
 	Util.txt.setLibraryBrowser(libs);
 
-	var files = Util.fs.getNotes("shakespeare");
-	Util.txt.setFileBrowser(files);
+	var lib = Util.session.getLibrary();
+	var notes = Util.fs.getNotes(lib);
+	Util.txt.setFileBrowser(notes);
 
-	Util.gen.createEditor();
+	var note = Util.session.getNote();
+	Util.txt.setInputText(Util.fs.getNoteContent(lib, note));
+
 }
 
 // G E N E R A L   S T U F F
@@ -196,9 +201,34 @@ Util.txt = function(){
 		setInputText:setInputText, setFileBrowser:setFileBrowser, setLibraryBrowser:setLibraryBrowser }
 }();
 
-// T E S T
-// var libs =  Util.fs.getLibraries();
-// var lib = libs[3];
-// var notes = Util.fs.getNotes(lib);
-// var note = notes[0];
-// console.log(Util.fs.getNoteContent(lib,note));
+// S E S S I O N   S T U F F
+// Getters and setters for session variables
+Util.session = function(){
+
+	var currentLib = "shakespeare";
+	var currentNote = "hamlet.md";
+
+	// Getters
+	
+	function getLibrary() {
+		return currentLib;
+	}
+
+	function getNote() {
+		return currentNote;
+	}
+
+	// Setters
+	
+	function setLibrary(lib) {
+		currentLib = lib;
+	}
+
+	function setNote(note) {
+		currentNote = note;
+	}
+	
+	return{ 
+		getLibrary:getLibrary, getNote:getNote,
+		setLibrary:setLibrary, setNote:setNote }
+}();
