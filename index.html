@@ -1,127 +1,98 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- load MUI -->
-    <link href="css/mui.min.css" rel="stylesheet" type="text/css" />
-    <script src="js/mui.min.js"></script>
-    <!-- Ace editor for markdown -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ace.js"></script>
-    <!-- Google Material Design fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <!-- Assorted Scripts that make it all work -->
-    <script src="js/GuiController.js"></script>
-    <script src="js/Util.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Ace editor for markdown -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ace.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize css -->
+  <link rel="stylesheet" href="materialize-src/css/materialize.css">
+  <!-- Assorted Scripts that make it all work -->
+  <script src="js/GuiController.js"></script>
+  <script src="js/Util.js"></script>
 
-    <!-- Corpus Processing Scripts -->
-    <script src="js/Concordance.js"></script>
-    <script src="js/DictionaryBase.js"></script>
-    <script src="js/PersistentWordPatterns.js"></script>
+  <!-- Corpus Processing Scripts -->
+  <script src="js/Concordance.js"></script>
+  <script src="js/DictionaryBase.js"></script>
+  <script src="js/PersistentWordPatterns.js"></script>
 
-    <!-- Custom Styles -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!-- Jquery -->
-    <script>
-      // Load w/ require to avoid conflict
-      window.$ = window.jQuery = require('jquery');
-    </script>
-    <!-- Main js file -->
-    <script src="js/script.js"></script>
-  </head>
-  <body>
-    <div id="sidedrawer" class="mui--no-user-select list-group">
-      <div id="sidedrawer-brand" class="mui--appbar-line-height mui--text-title">Corpus</div>
-      <div class="mui-divider"></div>
-      <ul>
-        <li>
-          <strong>Corpora</strong>
-          <ul>
-            <li><a href="#">Corpus (phonemic)</a></li>
-            <li><a href="#">Corpus (phonetic)</a></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Research Journal</strong>
-          <ul>
-            <li><a href="#">'Blog' Category A</a></li>
-            <li><a href="#">'Blog' tag B</a></li>
-          </ul>
-        </li>
-        <li>
-          <strong>Resources</strong>
-          <ul>
-            <li><a href="#">Culture</a></li>
-            <li><a href="#">Language</a></li>
-          </ul>
-        </li>
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!-- Jquery -->
+  <script>
+    // Load w/ require to avoid conflict
+    window.$ = window.jQuery = require('jquery');
+    window.Hammer = require('./materialize-src/js/hammer.min.js');
+  </script>
+  <!-- Main js file -->
+  <script src="js/script.js"></script>
+</head>
+<body>
+    <!-- Main navbar -->
+
+  <nav>
+    <div class="nav-wrapper">
+      <ul class="left">
+        <!-- Button to open sidenav -->
+        <li><a id = "sidenav-button" href="#" data-activates="slide-out"><i class="material-icons">menu</i></a></li>
+      </ul>
+      <form id = "navbar-search" class = "brand-logo">
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons">info_outline</i></a></li>
+        <li><a id = "navbar-options" href="#" data-activates='more-options'><i class="material-icons">more_vert</i></a></li>
       </ul>
     </div>
 
-    <header id="header">
-      <div class="mui-appbar mui--appbar-line-height">
-        <div class="mui-container-fluid">
-          <table width="100%">
-            <tr style="vertical-align:middle;">
-              <td id = "appbar-toggle-cell" class="mui--appbar-height">
-                <a class="sidedrawer-toggle js-show-sidedrawer"><i class="material-icons">menu</i></a>
-              </td>
-              <td id = "search-cell" class="mui--appbar-height">
-                <div id = "search-wrapper" class="mui-textfield">
-                  <!-- <i class="material-icons">search</i> -->
-                  <input id = "search" type="text" placeholder="Search/Create">
-                </div>
-              </td>
-              <td class="mui--text-right" align="right">
-                <div class="mui-dropdown">
-                  <a id="appbar-more-vert"><i class="material-icons">info_outline</i></a>
-                  <a id="appbar-more-vert" data-mui-toggle="dropdown"><i class="material-icons">more_vert</i></a>
-                  <ul class="mui-dropdown__menu mui-dropdown__menu--right">
-                    <li><a onclick="DictionaryBase.exe()">Dictionary Base</a></li>
-                    <li><a onclick="concordance()">Concordance</a></li>
-                    <li><a onclick="PersistentWordPatterns.exe()">Persistent Word Patterns</a></li>
-                    <li><a href="#">Feedback</a></li>
-                  </ul>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </header>
-    <div id="content-wrapper">
-      <div id="list-view" class = "list-group">
-        <ul id="fileBrowser">
-         <!--  <li><strong>oto magiwe</strong></li>
-         <li><strong>Another file</strong></li>
-         <li><strong>Hey look! A third one</strong></li>
-         <li><strong>And even a fourth</strong></li>
-         <li><strong>Could it be?</strong></li>
-         <li><strong>More files!?!!</strong></li> -->
-        </ul>
-        <button id = "add-fab" class="mui-btn mui-btn--fab mui-btn--primary">+</button>
+    <!-- Navbar dropdown content -->
+    <ul id='more-options' class='dropdown-content'>
+      <li><a href="#!">one</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
 
-      </div>
-      <div id = "content-section">
-        <div class="mui--appbar-height"></div>
-        <!-- Tabs bar -->
-        <ul id = "tabs" class="mui-tabs__bar mui-tabs__bar--justified">
-          <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="baseline-pane">BASELINE</a></li>
-          <li><a data-mui-toggle="tab" data-mui-controls="analyze-pane">ANALYZE</a></li>
-          <li><a data-mui-toggle="tab" data-mui-controls="chart-pane">TEXT CHART</a></li>
-        </ul>
-        <!-- Content -->
-        <div class="mui-container-fluid">
+    <ul id="slide-out" class="side-nav">
+      <li class="logo">Corpus</li>
+      <li><a href="#!">First Sidebar Link</a></li>
+      <li><a href="#!">Second Sidebar Link</a></li>
+    </ul>
 
-          <div class="mui-tabs__pane mui--is-active content-section" id="baseline-pane"></div>
-          <div class="mui-tabs__pane content-section" id="analyze-pane">ANALYZE</div>
-          <div class="mui-tabs__pane content-section" id="chart-pane">TEXT CHART</div>
+  </nav>
 
-        </div>
-      </div>
-    </div>
 
-  </body>
+  <!-- Grey navigation panel -->
+  <ul id = "list-view" class="collection no-margin">
+    <!-- <li class="collection-item">Testing</li>
+    <li class="collection-item">Testing</li>
+    <li class="collection-item">Testing</li>
+    <li class="collection-item">Testing</li> -->
+  </ul>
+
+  <!-- Tabs -->
+
+  <ul class="tabs z-depth-1">
+    <li class="tab"><a class="active" href="#baseline">baseline</a></li>
+    <li class="tab"><a href="#analyze">analyze</a></li>
+    <li class="tab"><a href="#text-chart">text chart</a></li>
+  </ul>
+
+  <!-- Tab content -->
+
+  <div id="baseline" class="content-section"></div>
+  <div id="analyze" class="content-section">Analyze</div>
+  <div id="text-chart" class="content-section">Text Chart</div>
+
+  <script src="materialize-src/js/bin/materialize.min.js"></script>
+
+</body>
 </html>
