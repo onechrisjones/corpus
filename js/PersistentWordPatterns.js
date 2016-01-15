@@ -4,6 +4,7 @@ PersistentWordPatterns = function(){
 	var lomc = 5; // length of max count
 	var buffer = 4; // space between count and combo
 
+	// Returns an array of all sets of 'numberOfWords' words unique up to case
 	function wordCombos(numberOfWords) {
 		var cleanedText = getCleanText();
 		var combos = [];
@@ -16,7 +17,6 @@ PersistentWordPatterns = function(){
 			combos.push(combo);
 		};
 		return Util.gen.unique(combos);
-		// return combos;
 	}
 
 	// Consecuative duplicates of the same thing the second one isn't counted
@@ -32,7 +32,6 @@ PersistentWordPatterns = function(){
 	function getCleanText() {
 		var cleanedText = Util.txt.getInputText();
 		cleanedText = Util.txt.clean(cleanedText);
-		// var cleanedText = "countOccurances I will Act II Scene II I will I will I will I will I will I will I will I will I will I will I will I will I will I will I will I will I will I will tell you why so shall my anticipation prevent your so discovery and your so secrecy to the king and queen moult no feather I have of latebut wherefore I know notlost all my mirth forgone all custom of exercises and indeed it goes so heavily with my disposition that this goodly frame the earth seems to me a sterile promontory this most excellent canopy the air look you this brave o'erhanging firmament this majestical roof fretted with golden fire why it appears no other thing to me than a foul and pestilent congregation of vapours What a piece of work is a man how noble in reason how infinite in faculty in form and moving how express and admirable in action how like an angel in apprehension how like a god the beauty of the world the paragon of animals And yet to me what is this quintessence of dust man delights not me no nor woman neither though by your so smiling you seem to say so"
 		cleanedText = cleanedText.toLowerCase();
 		return cleanedText;
 	}
@@ -87,8 +86,6 @@ PersistentWordPatterns = function(){
 		}
 		Util.txt.setOutputText(results);
 	}
-
-	function demo() { alert("PWP works!"); }
 
   	return{ exe:exe }
 }();

@@ -2,7 +2,7 @@ DictionaryBase = function(){
 	// Internal Variables
 	var title = "Dictionary Base";
 	var dictionary = "";
-	var sections = "abcdefghijklmnopqrstuvwxyz".split("");
+	var sections = "abcdefghijklmnopqrstuvwxyz".split(""); // This alphabet should be in Util w/ ignoreChar
 	var lolw = 20; // Length of Longest Word (+4)
 
 	// Internal Functions
@@ -21,6 +21,7 @@ DictionaryBase = function(){
 		return "# "+title+"\n\n";
 	}
 
+	// Get an array of all words unique up to case
 	function getWords() {
 		var raw = Util.txt.getInputText();
 		var cleanText = Util.txt.clean(raw);
@@ -37,7 +38,7 @@ DictionaryBase = function(){
 	}
 
 	// External Functions
-	var exe = function(){
+	function exe(){
 		lolw = getLongestWord().length+4;
 		dictionary = formatTitle();
 
@@ -54,16 +55,6 @@ DictionaryBase = function(){
 			else {
 				dictionary += formatLine(words[i]);
 			}
-			// if(sections[sectionIndex]==firstChar && !(sectionIndex==0 && i==0)) { // Special case for section A
-			// 	dictionary += formatLine(words[i])+"\n";
-			// }
-			// else {
-			// 	if(sections.indexOf(firstChar)>-1) {
-			// 		sectionIndex = sections.indexOf(firstChar);
-			// 		dictionary += formatSection(sections[sectionIndex])+"\n";
-			// 		dictionary += formatLine(words[i])+"\n";
-			// 	}
-			// }
 		};
 
 		Util.txt.setOutputText(dictionary);
@@ -71,9 +62,6 @@ DictionaryBase = function(){
 		lolw = 20;
 	}
 
-	var demo = function() {
-		Util.txt.debugOut( getWords() );
-	}
   	return{ exe:exe }
 }();
 
