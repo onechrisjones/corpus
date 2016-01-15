@@ -1654,7 +1654,7 @@
   width: calc(100% - 180px); }
 
 .input-field input[type=search]:focus {
-  background-color: #99aeb8; }
+  background-color: #7b96a3; }
 
 .side-nav li {
   padding: 0;
@@ -1677,14 +1677,28 @@
 .side-nav li.logo:hover {
   background-color: white; }
 
-/* List view styles */
-#list-view {
+.side-nav .collapsible-header, .side-nav .collapsible-body {
+  color: rgba(0, 0, 0, 0.87); }
+
+.side-nav .collapsible-body {
+  display: block; }
+
+/* File browser styles */
+#file-browser {
   position: absolute;
   top: 64px;
   left: 0px;
   width: 250px;
   z-index: 2;
   height: calc(100% - 64px); }
+
+#file-browser li {
+  width: 100% !important; }
+
+#add-files {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
 
 .no-margin .collection {
   border-radius: 0; }

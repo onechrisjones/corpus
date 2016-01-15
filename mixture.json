@@ -9,7 +9,6 @@
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": [
-    "materialize-src/sass",
     "sass"
   ],
   "preprocessorScriptOutput": null,

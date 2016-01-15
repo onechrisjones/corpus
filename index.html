@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Ace editor for markdown -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/ace.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/mode-markdown.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.2/snippets/markdown.js"></script>
   <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Materialize css -->
-  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="materialize-src/css/materialize.css">
   <!-- Assorted Scripts that make it all work -->
   <script src="js/GuiController.js"></script>
   <script src="js/Util.js"></script>
@@ -46,36 +48,60 @@
           <i class="material-icons">close</i>
         </div>
       </form>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right">
         <li><a href="#"><i class="material-icons">info_outline</i></a></li>
         <li><a id = "navbar-options" href="#" data-activates='more-options'><i class="material-icons">more_vert</i></a></li>
       </ul>
     </div>
 
     <!-- Navbar dropdown content -->
-    <ul id='more-options' class='dropdown-content'>
-      <li><a href="#!">one</a></li>
+    <ul id='more-options' class='dropdown-content' data-constrainwidth="false">
+      <li><a href="#!">Settings</a></li>
       <li class="divider"></li>
-      <li><a href="#!">two</a></li>
+      <li><a href="#!">About Corpus</a></li>
       <li class="divider"></li>
-      <li><a href="#!">three</a></li>
+      <li><a href="#!">Donate</a></li>
     </ul>
 
-    <ul id="slide-out" class="side-nav">
+    <!-- TODO: Fix wierd accordion behavior (check css) -->
+
+    <ul id="slide-out" class="side-nav collapsible collapsible-accordion" data-collapsible="accordion">
       <li class="logo">Corpus</li>
-      <li><a href="#!">First Sidebar Link</a></li>
-      <li><a href="#!">Second Sidebar Link</a></li>
+      <li>
+        <div class="collapsible-header">
+          First Sidebar Link
+        </div>
+        <div class="collapsible-body">
+          <ul class = "collection">
+            <li class="collection-item">testing</li>
+            <li class="collection-item">testing</li>
+            <li class="collection-item">testing</li>
+            <li class="collection-item">testing</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          Second Sidebar Link
+        </div>
+        <div class="collapsible-body">
+          <ul class = "collection">
+            <li class="collection-item">testing</li>
+            <li class="collection-item">testing</li>
+            <li class="collection-item">testing</li>
+            <li class="collection-item">testing</li>
+          </ul>
+        </div>
+      </li>
     </ul>
 
   </nav>
 
 
   <!-- Grey navigation panel -->
-  <ul id = "list-view" class="collection no-margin">
-    <!-- <li class="collection-item">Testing</li>
-    <li class="collection-item">Testing</li>
-    <li class="collection-item">Testing</li>
-    <li class="collection-item">Testing</li> -->
+  <ul id = "file-browser" class="collection no-margin">
+    <a id = "add-files" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+    <!-- Files put here -->
   </ul>
 
   <!-- Tabs -->

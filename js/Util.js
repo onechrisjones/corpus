@@ -12,8 +12,8 @@ Util = {};
 
 // O N L O A D   S T U F F
 window,onload = function(){
-	// var files = Util.fs.getNotes("shakespeare");
-	// Util.txt.setFileBrowser(files);
+	var files = Util.fs.getNotes("shakespeare");
+	Util.txt.setFileBrowser(files);
 }
 
 // G E N E R A L   S T U F F
@@ -142,7 +142,7 @@ Util.txt = function(){
 			var strong = document.createElement("strong");
 			strong.appendChild(document.createTextNode(note));
 			li.appendChild(strong);
-			li.setAttribute("class","collection-item");
+			li.setAttribute("class","collection-item waves-effect");
 			fileBrowser.appendChild(li);
 		};
 	}

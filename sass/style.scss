@@ -25,7 +25,7 @@
 }
 
 .input-field input[type=search]:focus{
-  background-color: lighten($primary-color, 20%);
+  background-color: lighten($primary-color, 10%);
 }
 
 .side-nav li{
@@ -53,19 +53,33 @@
   background-color: white;
 }
 
-#sidenav-button{
-
+.side-nav .collapsible-header, .side-nav .collapsible-body{
+  color: rgba(0, 0, 0, 0.87);
 }
 
-/* List view styles */
+.side-nav .collapsible-body{
+  display: block;
+}
 
-#list-view{
+/* File browser styles */
+
+#file-browser{
   position: absolute;
   top: 64px;
   left: 0px;
   width: 250px;
   z-index: 2;
   height: calc(100% - 64px);
+}
+
+#file-browser li{
+  width: 100% !important;
+}
+
+#add-files{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
 .no-margin .collection{
@@ -84,6 +98,10 @@
   top: 112px;
   width: calc(100% - 250px);
   height: calc(100% - 112px);
+}
+
+#baseline{
+  // font-family: ;
 }
 
 /* Tab styles */
