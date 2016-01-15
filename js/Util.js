@@ -11,14 +11,13 @@ Util = {};
 // - choose notebook location
 
 window,onload = function(){
-	var fileBrowser = document.getElementById("fileBrowser");
+	var listView = document.getElementById("list-view");
 	for (var i = 0; i < Util.fs.getNotes("shakespeare").length; i++) {
 		var note = Util.fs.getNotes("shakespeare")[i];
 		var li = document.createElement("li");
-		var strong = document.createElement("strong");
-		strong.appendChild(document.createTextNode(note));
-		li.appendChild(strong);
-		fileBrowser.appendChild(li);
+		li.classList.add("collection-item");
+		li.appendChild(document.createTextNode(note));
+		listView.appendChild(li);
 	};
 }
 
@@ -27,7 +26,7 @@ Util.gen = function(){
 
 	function makeIterator(array){
 	    var nextIndex = 0;
-	    
+
 	    return {
 	       next: function(){
 	           return nextIndex < array.length ?
@@ -60,7 +59,7 @@ Util.fs = function(){
 	var notebook = "notebook";
 
 	// Internal Functions
-	
+
  	function getDirectories(srcpath) {
 	  return fs.readdirSync(srcpath).filter(function(file) {
 	    return fs.statSync(path.join(srcpath, file)).isDirectory();
@@ -102,12 +101,12 @@ Util.fs = function(){
 Util.txt = function(){
 
 	// Internal Variables
-	var regexIgnoreLine = /\n*#.*/g; 
+	var regexIgnoreLine = /\n*#.*/g;
 	// var regexIgnoreChar = /[ \" \, \. \- \! \? \* \[ \] \d ]/g;
 	var regexIgnoreChar = /[^A-Za-z \s']/g;
 
 	// Internal Functions
-		
+
 	// External Functions
 	var clean = function(txt) {
 		txt = txt.replace(regexIgnoreLine,"");
@@ -141,7 +140,7 @@ Util.txt = function(){
 		// var output = document.getElementById("outputTextbox");
 		// output.value = txt;
 		var editor = ace.edit('baseline-pane');
-		editor.setValue(txt);		
+		editor.setValue(txt);
 	}
 
 	var setInputText = function(txt) {
@@ -152,7 +151,7 @@ Util.txt = function(){
 	return{ clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText}
 }();
 
-// T E S T 
+// T E S T
 // var libs =  Util.fs.getLibraries();
 // var lib = libs[3];
 // var notes = Util.fs.getNotes(lib);
