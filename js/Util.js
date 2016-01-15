@@ -9,8 +9,12 @@ Util = {};
 
 // O N L O A D   S T U F F
 window,onload = function(){
+	var libs = Util.fs.getLibraries();
+	Util.txt.setLibraryBrowser(libs);
+
 	var files = Util.fs.getNotes("shakespeare");
 	Util.txt.setFileBrowser(files);
+
 	Util.gen.createEditor();
 }
 
@@ -176,7 +180,20 @@ Util.txt = function(){
 		};
 	}
 
-	return{ clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, setInputText:setInputText, setFileBrowser:setFileBrowser }
+	function setLibraryBrowser(libs) {
+		var libBrowser = document.getElementById("library-browser");
+		for (var i = 0; i < libs.length; i++) {
+			var lib = libs[i];
+			var li = document.createElement("li");
+			li.appendChild(document.createTextNode(lib));
+			li.setAttribute("class","collection-item");
+			libBrowser.appendChild(li);
+		};
+	}
+
+	return{ 
+		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, 
+		setInputText:setInputText, setFileBrowser:setFileBrowser, setLibraryBrowser:setLibraryBrowser }
 }();
 
 // T E S T
