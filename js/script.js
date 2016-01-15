@@ -11,8 +11,4 @@ jQuery(function($) {
     accordion : true
   });
 
-  // Set up ace editor
-  var editor = ace.edit('baseline');
-  editor.getSession().setMode("ace/mode/markdown");
-
 });

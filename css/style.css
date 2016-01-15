@@ -1639,6 +1639,15 @@
 /*** Typography ***/
 /*** Collections ***/
 /* Progress Bar */
+@font-face {
+  font-family: "DejaVu Mono";
+  src: url(../resources/fonts/DejaVuSansMono.ttf); }
+@font-face {
+  font-family: "Cutive Mono";
+  src: url(../resources/fonts/CutiveMono-Regular.ttf); }
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../resources/fonts/RobotoMono-Regular.ttf); }
 /* General styles */
 .no-padding {
   padding: 0px; }
@@ -1713,6 +1722,12 @@
   top: 112px;
   width: calc(100% - 250px);
   height: calc(100% - 112px); }
+
+.content-section:not(:first-of-type) {
+  padding: 15px; }
+
+#baseline {
+  font-family: "DejaVu Mono"; }
 
 /* Tab styles */
 .tabs {

@@ -3,6 +3,21 @@
 @import "../materialize-src/sass/components/color";
 @import "../materialize-src/sass/components/variables";
 
+@font-face {
+  font-family: "DejaVu Mono";
+  src: url(../resources/fonts/DejaVuSansMono.ttf);
+}
+
+@font-face {
+  font-family: "Cutive Mono";
+  src: url(../resources/fonts/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../resources/fonts/RobotoMono-Regular.ttf);
+}
+
 /* General styles */
 
 
@@ -100,8 +115,13 @@
   height: calc(100% - 112px);
 }
 
+.content-section:not(:first-of-type){
+  padding: 15px;
+}
+
 #baseline{
-  // font-family: ;
+  font-family: "DejaVu Mono";
+  // font-size: 18px;
 }
 
 /* Tab styles */

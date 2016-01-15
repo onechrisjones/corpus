@@ -14,6 +14,7 @@ Util = {};
 window,onload = function(){
 	var files = Util.fs.getNotes("shakespeare");
 	Util.txt.setFileBrowser(files);
+	Util.markdown.createEditor();
 }
 
 // G E N E R A L   S T U F F
@@ -40,6 +41,35 @@ Util.gen = function(){
 	}
 
 	return{ makeIterator:makeIterator, unique:unique }
+}();
+
+// R E N D E R I N G
+
+Util.markdown = function(){
+
+	var marked = require('marked');
+
+	// Internal Functions
+
+	function render(editor){
+		var renderedHTML = marked(editor.getValue());
+		var preview = document.getElementById('preview');
+		preview.innerHTML = renderedHTML;
+	}
+
+	// External Functions
+
+	function createEditor(){
+		// Set up ace editor
+	  var editor = ace.edit('baseline');
+	  editor.getSession().setMode("ace/mode/markdown");
+		editor.on('change', function(){
+			render(editor);
+		});
+		return editor;
+	}
+
+	return {createEditor: createEditor}
 }();
 
 // F I L E   S T U F F
