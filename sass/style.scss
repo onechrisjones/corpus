@@ -64,6 +64,21 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 175px; /* Changed this to accomodate content width */
+  max-height: auto;
+	margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 12;
+  will-change: width, height;
+}
+
 .side-nav li.logo:hover{
   background-color: white;
 }
@@ -76,6 +91,8 @@
   display: block;
 }
 
+
+
 /* File browser styles */
 
 #file-browser{
@@ -83,12 +100,15 @@
   top: 64px;
   left: 0px;
   width: 250px;
-  z-index: 2;
+  z-index: 1004;
   height: calc(100% - 64px);
 }
 
 #file-browser li{
   width: 100% !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #add-files{
@@ -119,9 +139,47 @@
   padding: 15px;
 }
 
-#baseline{
+#editor{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   font-family: "DejaVu Mono";
   // font-size: 18px;
+}
+
+#search-modal-trigger{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+}
+
+#search-modal{
+  left: 250px;
+  width: calc(100% - 250px);
+  background-color: $primary-color;
+  color: white;
+}
+
+#find-row{
+  display: flex;
+  flex-direction: row;
+}
+
+#find-row input{
+  flex: flex-grow;
+  margin-right: 20px;
+}
+
+.btn-floating{
+  flex: none;
+  margin-left: 10px;
+}
+
+#preview{
+  overflow-y: scroll;
 }
 
 /* Tab styles */
@@ -129,5 +187,17 @@
 .tabs{
   position: absolute;
   left: 250px;
+  z-index: 10;
   width: calc(100% - 250px) !important;
+}
+
+// Ace search bar
+
+.ace_search.right{
+  background-color: $primary-color !important;
+  border-radius: 4px !important;
+}
+
+.ace_search_form, .ace_replace_form{
+  border: none !important;
 }

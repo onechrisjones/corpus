@@ -11,4 +11,9 @@ jQuery(function($) {
     accordion : true
   });
 
+  $('.modal-trigger').leanModal({
+    dismissible: true,
+    opacity: 0
+  });
+
 });

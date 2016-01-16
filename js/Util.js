@@ -18,6 +18,8 @@ window,onload = function(){
 Util.gen = function(){
 
 	var marked = require('marked');
+	// global ref to editor instance
+	var editorInstance = {};
 
 	////////////////////////
 	// External Functions //
@@ -26,6 +28,26 @@ Util.gen = function(){
 		var renderedHTML = marked(markdownText);
 		var preview = document.getElementById('preview');
 		preview.innerHTML = renderedHTML;
+	}
+
+	function search(){
+		var text = document.querySelector('#search-text').value;
+		var range = editorInstance.find(text, {
+			regExp: false
+		});
+		console.log(range);
+	}
+
+	function findNext(){
+		editorInstance.findNext({
+			regExp: false
+		}, false);
+	}
+
+	function findPrevious(){
+		editorInstance.findPrevious({
+			regExp: false
+		}, false);
 	}
 
 	// Note mixed arrays might goof it up (eg 2="2"). Unless you dig that sorta thing
@@ -38,15 +60,16 @@ Util.gen = function(){
 
 	function createEditor(){
 		// Set up ace editor
-	  var editor = ace.edit('baseline');
+	  var editor = ace.edit('editor');
 	  editor.getSession().setMode("ace/mode/markdown");
 		editor.on('change', function(){
 			render(editor.getValue());
 		});
+		editorInstance = editor;
 		return editor;
 	}
-	
-	return{ render:render, makeIterator:makeIterator, unique:unique, createEditor:createEditor }
+
+	return{ render:render, makeIterator:makeIterator, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
 }();
 
 // F I L E   S T U F F
@@ -174,7 +197,7 @@ Util.txt = function(){
 	}
 
 	function getInputText() {
-		var editor = ace.edit('baseline');
+		var editor = ace.edit('editor');
 		return editor.getValue();
 	}
 
@@ -183,13 +206,13 @@ Util.txt = function(){
 	}
 
 	function setInputText(txt) {
-		var editor = ace.edit('baseline');
+		var editor = ace.edit('editor');
 		editor.setValue(txt);
 	}
 
 	function setFileBrowser(files) {
 		var fileBrowser = document.getElementById("file-browser");
-		fileBrowser.innerHTML = "";
+		fileBrowser.innerHTML = "<a id = 'add-files' class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a>";
 		for (var i = 0; i < files.length; i++) {
 			var note = files[i];
 			var li = document.createElement("li");
@@ -216,8 +239,8 @@ Util.txt = function(){
 		};
 	}
 
-	return{ 
-		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, 
+	return{
+		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText,
 		setInputText:setInputText, setFileBrowser:setFileBrowser, setLibraryBrowser:setLibraryBrowser }
 }();
 
@@ -231,7 +254,7 @@ Util.session = function(){
 	////////////////////////
 	// Internal Functions //
 	////////////////////////
-	
+
 	// Refreshes everything to the current library and note
 	function update() {
 		console.log("Updating\t" + currentLib + "\t"+ currentNote);
@@ -244,7 +267,7 @@ Util.session = function(){
 	/////////////
 	// Getters //
 	/////////////
-	
+
 	function getLibrary() {
 		return currentLib;
 	}
@@ -256,7 +279,7 @@ Util.session = function(){
 	/////////////
 	// Setters //
 	/////////////
-	
+
 	function setLibrary(lib) {
 		if(lib!=currentLib) {
 			currentLib = lib;
@@ -270,7 +293,7 @@ Util.session = function(){
 		currentNote = note;
 		update();
 	}
-	
+
 	return{ update:update,
 		getLibrary:getLibrary, getNote:getNote,
 		setLibrary:setLibrary, setNote:setNote }
@@ -286,5 +309,5 @@ Util.onlclick = function(){
 
 	}
 
-	return{}	
+	return{}
 }
