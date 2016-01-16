@@ -8,11 +8,11 @@ Util = {};
 // - choose notebook location
 
 // O N L O A D   S T U F F
-window,onload = function(){
+window.onload = function(){
 	Util.gen.createEditor();
 
 	Util.session.update();
-}
+};
 
 // G E N E R A L   S T U F F
 Util.gen = function(){
@@ -69,7 +69,7 @@ Util.gen = function(){
 		return editor;
 	}
 
-	return{ render:render, makeIterator:makeIterator, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
+	return{ render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
 }();
 
 // F I L E   S T U F F
@@ -176,7 +176,7 @@ Util.txt = function(){
 
 	function isMatch(regexInnards,txt) {
 		var pattern = new RegExp(" "+regexInnards+" ",'gi');
-		var count = (cleanedText.match(pattern) || []).length;	
+		var count = (cleanedText.match(pattern) || []).length;
 		return count>0;
 	}
 
