@@ -64,6 +64,21 @@
   border-bottom: 1px solid #e0e0e0;
 }
 
+.dropdown-content {
+  background-color: #FFFFFF;
+  margin: 0;
+  display: none;
+  min-width: 175px; /* Changed this to accomodate content width */
+  max-height: auto;
+	margin-left: -1px; /* Add this to keep dropdown in line with edge of navbar */
+  overflow: hidden; /* Changed this from overflow-y:auto; to overflow:hidden; */
+  opacity: 0;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 12;
+  will-change: width, height;
+}
+
 .side-nav li.logo:hover{
   background-color: white;
 }
@@ -83,12 +98,13 @@
   top: 64px;
   left: 0px;
   width: 250px;
-  z-index: 2;
+  z-index: 11;
   height: calc(100% - 64px);
 }
 
 #file-browser li{
   width: 100% !important;
+  text-overflow: ellipsis;
 }
 
 #add-files{
@@ -124,10 +140,15 @@
   // font-size: 18px;
 }
 
+#preview{
+  overflow-y: scroll;
+}
+
 /* Tab styles */
 
 .tabs{
   position: absolute;
   left: 250px;
+  z-index: 10;
   width: calc(100% - 250px) !important;
 }
