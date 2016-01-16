@@ -57,7 +57,7 @@ Util.gen = function(){
 		});
 		return editor;
 	}
-	
+
 	return{ render:render, makeIterator:makeIterator, unique:unique, createEditor:createEditor }
 }();
 
@@ -173,7 +173,7 @@ Util.txt = function(){
 
 	function setFileBrowser(files) {
 		var fileBrowser = document.getElementById("file-browser");
-		fileBrowser.innerHTML = "";
+		fileBrowser.innerHTML = "<a id = 'add-files' class='btn-floating btn-large waves-effect waves-light'><i class='material-icons'>add</i></a>";
 		for (var i = 0; i < files.length; i++) {
 			var note = files[i];
 			var li = document.createElement("li");
@@ -200,8 +200,8 @@ Util.txt = function(){
 		};
 	}
 
-	return{ 
-		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, 
+	return{
+		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText,
 		setInputText:setInputText, setFileBrowser:setFileBrowser, setLibraryBrowser:setLibraryBrowser }
 }();
 
@@ -215,7 +215,7 @@ Util.session = function(){
 	////////////////////////
 	// Internal Functions //
 	////////////////////////
-	
+
 	// Refreshes everything to the current library and note
 	function update() {
 		console.log("Updating\t" + currentLib + "\t"+ currentNote);
@@ -228,7 +228,7 @@ Util.session = function(){
 	/////////////
 	// Getters //
 	/////////////
-	
+
 	function getLibrary() {
 		return currentLib;
 	}
@@ -240,7 +240,7 @@ Util.session = function(){
 	/////////////
 	// Setters //
 	/////////////
-	
+
 	function setLibrary(lib) {
 		if(lib!=currentLib) {
 			currentLib = lib;
@@ -254,7 +254,7 @@ Util.session = function(){
 		currentNote = note;
 		update();
 	}
-	
+
 	return{ update:update,
 		getLibrary:getLibrary, getNote:getNote,
 		setLibrary:setLibrary, setNote:setNote }
@@ -270,5 +270,5 @@ Util.onlclick = function(){
 
 	}
 
-	return{}	
+	return{}
 }

@@ -1720,6 +1720,8 @@
 
 #file-browser li {
   width: 100% !important;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis; }
 
 #add-files {
@@ -1756,3 +1758,10 @@
   left: 250px;
   z-index: 10;
   width: calc(100% - 250px) !important; }
+
+.ace_search.right {
+  background-color: #607d8b !important;
+  border-radius: 4px !important; }
+
+.ace_search_form, .ace_replace_form {
+  border: none !important; }

@@ -11,4 +11,6 @@ jQuery(function($) {
     accordion : true
   });
 
+  $('.ace_search.right').addClass('z-depth-2');
+
 });

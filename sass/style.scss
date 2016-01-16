@@ -91,6 +91,8 @@
   display: block;
 }
 
+
+
 /* File browser styles */
 
 #file-browser{
@@ -104,6 +106,8 @@
 
 #file-browser li{
   width: 100% !important;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -151,4 +155,15 @@
   left: 250px;
   z-index: 10;
   width: calc(100% - 250px) !important;
+}
+
+// Ace search bar
+
+.ace_search.right{
+  background-color: $primary-color !important;
+  border-radius: 4px !important;
+}
+
+.ace_search_form, .ace_replace_form{
+  border: none !important;
 }
