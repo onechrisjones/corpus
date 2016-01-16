@@ -5,7 +5,10 @@ DictionaryBase = function(){
 	var sections = "abcdefghijklmnopqrstuvwxyz".split(""); // This alphabet should be in Util w/ ignoreChar
 	var lolw = 20; // Length of Longest Word (+4)
 
-	// Internal Functions
+	////////////////////////
+	// Internal Functions //
+	////////////////////////
+
 	function formatLine(word) {
 		var padding = lolw-word.length;
 		var spaaace = (new Array(padding + 1)).join(" ");
@@ -37,7 +40,10 @@ DictionaryBase = function(){
 		return getWords().reduce(function (a, b) { return a.length > b.length ? a : b; });
 	}
 
-	// External Functions
+	////////////////////////
+	// External Functions //
+	////////////////////////
+
 	function exe(){
 		lolw = getLongestWord().length+4;
 		dictionary = formatTitle();

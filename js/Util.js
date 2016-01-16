@@ -28,18 +28,6 @@ Util.gen = function(){
 		preview.innerHTML = renderedHTML;
 	}
 
-	function makeIterator(array){
-	    var nextIndex = 0;
-
-	    return {
-	       next: function(){
-	           return nextIndex < array.length ?
-	               {value: array[nextIndex++], done: false} :
-	               {done: true};
-	       }
-	    }
-	}
-
 	// Note mixed arrays might goof it up (eg 2="2"). Unless you dig that sorta thing
 	function unique(array) {
 	    var seen = {};
@@ -103,6 +91,21 @@ Util.fs = function(){
 		});
 	}
 
+	function getFileMatches(srcpath,regexInnards) {
+		var files = getFiles(srcpath);
+		var matches = [];
+		for (var i = 0; i < files.length; i++) {
+			var file = files[i];
+			var filepath = path.join(srcpath,file);
+			var content = getFileContent(filepath);
+			var tf = Util.txt.isMatch(regexInnards,content);
+			if(tf) {
+				mathes.push(file);
+			}
+		};
+		return matches;
+	}
+
 	////////////////////////
 	// External Functions //
 	////////////////////////
@@ -127,7 +130,13 @@ Util.fs = function(){
 		writeFile(noteDir,content);
 	}
 
-	return{getLibraries:getLibraries, getNotes:getNotes, getNoteContent:getNoteContent, saveNote:saveNote}
+	function searchNotes(library,regexInnards) {
+		var libraryDir = path.join(root,notebook,library);
+		var notes = getFileMatches(srcpath,regexInnards);
+		return notes;
+	}
+
+	return{getLibraries:getLibraries, getNotes:getNotes, getNoteContent:getNoteContent, saveNote:saveNote, searchNotes:searchNotes}
 }();
 
 // T E X T   S T U F F
@@ -142,9 +151,16 @@ Util.txt = function(){
 	// Internal Functions //
 	////////////////////////
 
+	function isMatch(regexInnards,txt) {
+		var pattern = new RegExp(" "+regexInnards+" ",'gi');
+		var count = (cleanedText.match(pattern) || []).length;	
+		return count>0;
+	}
+
 	////////////////////////
 	// External Functions //
 	////////////////////////
+
 	function clean(txt) {
 		txt = txt.replace(regexIgnoreLine,"");
 		txt = txt.replace(regexIgnoreChar,"");

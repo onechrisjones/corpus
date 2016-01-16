@@ -4,6 +4,11 @@ PersistentWordPatterns = function(){
 	var lomc = 5; // length of max count
 	var buffer = 4; // space between count and combo
 
+
+	////////////////////////
+	// Internal Functions //
+	////////////////////////
+
 	// Returns an array of all sets of 'numberOfWords' words unique up to case
 	function wordCombos(numberOfWords) {
 		var cleanedText = getCleanText();
@@ -51,6 +56,10 @@ PersistentWordPatterns = function(){
 		return "# "+title;
 	}
 	
+	///////////////////////
+	// External Function //
+	///////////////////////
+
 	function exe() {
 		var results = formatTitle()+"\n";
 		var numWords = 2;
