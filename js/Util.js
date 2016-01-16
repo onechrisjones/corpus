@@ -18,6 +18,8 @@ window,onload = function(){
 Util.gen = function(){
 
 	var marked = require('marked');
+	// global ref to editor instance
+	var editorInstance = {};
 
 	////////////////////////
 	// External Functions //
@@ -40,6 +42,27 @@ Util.gen = function(){
 	    }
 	}
 
+	function search(){
+		var text = document.querySelector('#search-text').value;
+		var range = editorInstance.find(text, {
+			regExp: false
+		});
+		console.log(range);
+	}
+
+	function findNext(){
+		editorInstance.findNext({
+			regExp: false
+		}, false);
+	}
+
+	function findPrevious(){
+		editorInstance.findPrevious({
+			regExp: false
+		}, false);
+	}
+
+
 	// Note mixed arrays might goof it up (eg 2="2"). Unless you dig that sorta thing
 	function unique(array) {
 	    var seen = {};
@@ -50,15 +73,16 @@ Util.gen = function(){
 
 	function createEditor(){
 		// Set up ace editor
-	  var editor = ace.edit('baseline');
+	  var editor = ace.edit('editor');
 	  editor.getSession().setMode("ace/mode/markdown");
 		editor.on('change', function(){
 			render(editor.getValue());
 		});
+		editorInstance = editor;
 		return editor;
 	}
 
-	return{ render:render, makeIterator:makeIterator, unique:unique, createEditor:createEditor }
+	return{ render:render, makeIterator:makeIterator, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
 }();
 
 // F I L E   S T U F F
@@ -158,7 +182,7 @@ Util.txt = function(){
 	}
 
 	function getInputText() {
-		var editor = ace.edit('baseline');
+		var editor = ace.edit('editor');
 		return editor.getValue();
 	}
 
@@ -167,7 +191,7 @@ Util.txt = function(){
 	}
 
 	function setInputText(txt) {
-		var editor = ace.edit('baseline');
+		var editor = ace.edit('editor');
 		editor.setValue(txt);
 	}
 

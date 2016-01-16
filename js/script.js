@@ -11,6 +11,9 @@ jQuery(function($) {
     accordion : true
   });
 
-  $('.ace_search.right').addClass('z-depth-2');
+  $('.modal-trigger').leanModal({
+    dismissible: true,
+    opacity: 0
+  });
 
 });

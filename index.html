@@ -122,7 +122,30 @@
 
   <!-- Tab content -->
   <div id = "tab-content">
-    <div id="baseline" class="content-section"></div>
+    <div id = "baseline" class = "content-section">
+      <!-- Modal Trigger -->
+      <button id = "search-modal-trigger" class="waves-effect waves-light btn modal-trigger" data-target="search-modal">Search</button>
+      <!-- Modal Structure -->
+      <div id="search-modal" class="modal bottom-sheet">
+        <div class="modal-content">
+          <div id="find-row">
+            <input placeholder="Search the text" id="search-text" type="text" class="validate">
+            <button class = "btn waves-effect waves-light" onclick = "Util.gen.search()">Search</button>
+            <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findPrevious()">chevron_left</i></a>
+            <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findNext()">chevron_right</i></a>
+          </div>
+          <!-- <div class="row">
+            <div class="col s9">
+              <input placeholder="Replace" id="first_name" type="text" class="validate">
+            </div>
+          </div> -->
+        </div>
+        <!-- <div class="modal-footer">
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div> -->
+      </div>
+      <div id="editor"></div>
+    </div>
     <div id="preview" class="content-section"></div>
     <div id="analyze" class="content-section">Analyze</div>
     <div id="text-chart" class="content-section">Text Chart</div>
