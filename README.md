@@ -27,17 +27,17 @@ Corpus is a language documentation notebook for doing linguistic data analysis t
 ## ToDo	
 Top Corpus Requirements:
 
-  - [ ] file io for libraries and notes
+  - [x] file io for libraries and notes
   - [ ] file searching
   - [ ] file editing
   - [ ] find/replace w/ regex
   - [ ] data analysis toolbox:
     - [ ] Concordance - Show first occurance of each word in note selection (case sensative)
     - [x] Dictionary Base - Alphabetatical dictionary md template of each word (case insensative)
-    - [ ] Persistent Word Patterns - Count the number of times a ordered group of n words occurs (case insensative)
+    - [x] Persistent Word Patterns - Count the number of times a ordered group of n words occurs (case insensative)
 
 Auxilary Features:
-  - [ ] Markdown Preview
+  - [x] Markdown Preview
   - [ ] Regex Syntax Highlighting + Find Result Highlighting
   - [ ] Export to PDF and to HTML
 
