@@ -128,31 +128,25 @@
       <!-- Modal Structure -->
       <div id="search-modal" class="modal bottom-sheet">
         <div class="modal-content">
-          <div class = "flex-row">
-            <input placeholder="Search the text" id="search-text" type="text" class="validate flex">
-            <div class="flex-col">
-              <div class="flex-row">
-                <button class = "btn waves-effect waves-light" onclick = "Util.gen.search()">Search</button>
-                <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findPrevious()">chevron_left</i></a>
-                <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findNext()">chevron_right</i></a>
+          <div id = "modal-search-bar" class = "flex-row align-center">
+              <input placeholder="Search the text" id="search-text" type="text" class="validate flex">
+              <a id = "search-button" class = "btn waves-effect waves-light" onclick = "Util.gen.search()">Search</a>
+              <a class="btn-floating waves-effect waves-light"><i class="material-icons" onclick = "Util.gen.findPrevious()">chevron_left</i></a>
+              <a class="btn-floating waves-effect waves-light"><i class="material-icons" onclick = "Util.gen.findNext()">chevron_right</i></a>
+              <p>Regex: </p>
+              <!-- Switch -->
+              <div class="switch">
+                <label>
+                  <input id = "regex-search-toggle" type="checkbox">
+                  <span class="lever"></span>
+                </label>
               </div>
-              <div class="flex-row align-center">
-                <p>Regex: </p>
-                <!-- Switch -->
-                <div class="switch">
-                  <label>
-                    <input id = "regex-search-toggle" type="checkbox">
-                    <span class="lever"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
           </div>
-          <!-- <div class="row">
-            <div class="col s9">
-              <input placeholder="Replace" id="first_name" type="text" class="validate">
-            </div>
-          </div> -->
+          <div id = "modal-replace-bar" class="flex-row align-center">
+            <input placeholder="Replace in current buffer" id="replace-text" type="text" class="validate">
+            <a id = "replace" class="btn waves-effect waves-light">Replace</a>
+            <a id = "replace-all" class="btn waves-effect waves-light">Replace All</a>
+          </div>
         </div>
         <!-- <div class="modal-footer">
           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
