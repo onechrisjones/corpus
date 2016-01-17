@@ -69,7 +69,7 @@ Util.gen = function(){
 		return editor;
 	}
 
-	return{ render:render, makeIterator:makeIterator, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
+	return{ render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
 }();
 
 // F I L E   S T U F F
@@ -94,6 +94,7 @@ Util.fs = function(){
 	}
 
  	function getFiles(srcpath) {
+ 		console.log("What I got "+srcpath);
 		var files = fs.readdirSync(srcpath);
 		return files.filter(function(file) {
 		    return !fs.statSync(path.join(srcpath, file)).isDirectory();
@@ -115,7 +116,9 @@ Util.fs = function(){
 	}
 
 	function getFileMatches(srcpath,regexInnards) {
+		console.log("MAtching files");
 		var files = getFiles(srcpath);
+		console.log("Got files "+files);
 		var matches = [];
 		for (var i = 0; i < files.length; i++) {
 			var file = files[i];
@@ -123,7 +126,8 @@ Util.fs = function(){
 			var content = getFileContent(filepath);
 			var tf = Util.txt.isMatch(regexInnards,content);
 			if(tf) {
-				mathes.push(file);
+				console.log(file+" is a match")
+				matches.push(file);
 			}
 		};
 		return matches;
@@ -154,8 +158,10 @@ Util.fs = function(){
 	}
 
 	function searchNotes(library,regexInnards) {
+		console.log("Searching notes for "+regexInnards)
 		var libraryDir = path.join(root,notebook,library);
-		var notes = getFileMatches(srcpath,regexInnards);
+		console.log("Got path ",libraryDir);
+		var notes = getFileMatches(libraryDir,regexInnards);
 		return notes;
 	}
 
@@ -174,15 +180,16 @@ Util.txt = function(){
 	// Internal Functions //
 	////////////////////////
 
-	function isMatch(regexInnards,txt) {
-		var pattern = new RegExp(" "+regexInnards+" ",'gi');
-		var count = (cleanedText.match(pattern) || []).length;	
-		return count>0;
-	}
 
 	////////////////////////
 	// External Functions //
 	////////////////////////
+
+	function isMatch(regexInnards,txt) {
+		var pattern = new RegExp(regexInnards,'gi');
+		var count = (txt.match(pattern) || []).length;	
+		return count>0;
+	}
 
 	function clean(txt) {
 		txt = txt.replace(regexIgnoreLine,"");
@@ -240,7 +247,7 @@ Util.txt = function(){
 	}
 
 	return{
-		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText,
+		clean:clean, debugOut:debugOut, getInputText:getInputText, setOutputText:setOutputText, isMatch:isMatch,
 		setInputText:setInputText, setFileBrowser:setFileBrowser, setLibraryBrowser:setLibraryBrowser }
 }();
 
@@ -294,7 +301,14 @@ Util.session = function(){
 		update();
 	}
 
-	return{ update:update,
+	function demo() {
+		var search = document.getElementById("search-files");
+		var regexInnards = search.value;
+		var files = Util.fs.searchNotes(currentLib, regexInnards);
+		Util.txt.setFileBrowser(files);
+	}
+
+	return{ update:update, exe:demo,
 		getLibrary:getLibrary, getNote:getNote,
 		setLibrary:setLibrary, setNote:setNote }
 }();
@@ -311,3 +325,11 @@ Util.onlclick = function(){
 
 	return{}
 }
+
+// var fs = require("fs");
+// var x = Util.fs.getNoteContent("shakespeare","hamlet.md");
+// console.log(x);
+// var b = Util.txt.isMatch("neither",x);
+// console.log(b);
+// console.log(fs.readdirSync("/home/nonlinearfruit/Programming/JavaScript/corpus/js/notebook/shakespeare"));
+// console.log(Util.fs.searchNotes("shakespeare","Act.*Scene"));
