@@ -14,6 +14,11 @@ window.onload = function(){
 	Util.session.update();
 };
 
+document.addEventListener('DOMContentLoaded', function(){
+	document.querySelector('#app-preloader').classList.add('hidden');
+	document.querySelector('#app-preloader-wrapper').classList.add('hidden');
+});
+
 // G E N E R A L   S T U F F
 Util.gen = function(){
 
