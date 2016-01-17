@@ -32,21 +32,24 @@ Util.gen = function(){
 
 	function search(){
 		var text = document.querySelector('#search-text').value;
+		var regex = document.getElementById('regex-search-toggle').checked;
 		var range = editorInstance.find(text, {
-			regExp: false
+			regExp: regex
 		});
 		console.log(range);
 	}
 
 	function findNext(){
+		var regex = document.getElementById('regex-search-toggle').checked;
 		editorInstance.findNext({
-			regExp: false
+			regExp: regex
 		}, false);
 	}
 
 	function findPrevious(){
+		var regex = document.getElementById('regex-search-toggle').checked;
 		editorInstance.findPrevious({
-			regExp: false
+			regExp: regex
 		}, false);
 	}
 

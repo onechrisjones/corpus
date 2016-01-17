@@ -1658,6 +1658,23 @@
 .full-height {
   height: 100%; }
 
+.flex-row {
+  display: flex !important;
+  flex-direction: row !important; }
+
+.flex-col {
+  display: flex !important;
+  flex-direction: column !important; }
+
+.flex-row.flex {
+  flex: flex-grow !important; }
+
+.flex-col.flex {
+  flex: flex-grow !important; }
+
+.align-center {
+  align-items: center; }
+
 /* Navigation styles */
 #navbar-search {
   width: calc(100% - 180px); }
@@ -1770,13 +1787,15 @@
   display: flex;
   flex-direction: row; }
 
-#find-row input {
-  flex: flex-grow;
+.flex-row input {
   margin-right: 20px; }
 
 .btn-floating {
   flex: none;
-  margin-left: 10px; }
+  margin-left: 15px; }
+
+.modal-content.btn {
+  flex: none; }
 
 #preview {
   overflow-y: scroll; }

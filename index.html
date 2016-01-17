@@ -128,11 +128,25 @@
       <!-- Modal Structure -->
       <div id="search-modal" class="modal bottom-sheet">
         <div class="modal-content">
-          <div id="find-row">
-            <input placeholder="Search the text" id="search-text" type="text" class="validate">
-            <button class = "btn waves-effect waves-light" onclick = "Util.gen.search()">Search</button>
-            <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findPrevious()">chevron_left</i></a>
-            <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findNext()">chevron_right</i></a>
+          <div class = "flex-row">
+            <input placeholder="Search the text" id="search-text" type="text" class="validate flex">
+            <div class="flex-col">
+              <div class="flex-row">
+                <button class = "btn waves-effect waves-light" onclick = "Util.gen.search()">Search</button>
+                <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findPrevious()">chevron_left</i></a>
+                <a class="btn-floating"><i class="material-icons" onclick = "Util.gen.findNext()">chevron_right</i></a>
+              </div>
+              <div class="flex-row align-center">
+                <p>Regex: </p>
+                <!-- Switch -->
+                <div class="switch">
+                  <label>
+                    <input id = "regex-search-toggle" type="checkbox">
+                    <span class="lever"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- <div class="row">
             <div class="col s9">
