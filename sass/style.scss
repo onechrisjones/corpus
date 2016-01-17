@@ -33,6 +33,50 @@
   height: 100%;
 }
 
+.hidden{
+  display: none !important;
+}
+
+#app-preloader-wrapper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#app-preloader{
+  margin: auto;
+}
+
+// Flexbox convenience classes
+
+.display-flex{
+  display: flex !important;
+}
+
+.flex-row{
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.flex-col{
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.flex-row.flex{
+  flex: 1 !important;
+}
+.flex-col.flex{
+  flex: 1 !important;
+}
+
+.align-center{
+  align-items: center;
+}
+
 /* Navigation styles */
 
 #navbar-search{
@@ -100,7 +144,6 @@
   top: 64px;
   left: 0px;
   width: 250px;
-  z-index: 1004;
   height: calc(100% - 64px);
 }
 
@@ -168,14 +211,55 @@
   flex-direction: row;
 }
 
-#find-row input{
-  flex: flex-grow;
-  margin-right: 20px;
+#modal-search-bar input{
+  margin-bottom: 0;
+}
+
+#modal-replace-bar input{
+  margin-bottom: 0;
 }
 
 .btn-floating{
   flex: none;
+  margin-left: 15px;
+}
+
+#modal-replace-bar a{
+  margin-left: 15px;
+  background-color: color("blue-grey", "darken-3");
+}
+
+#modal-search-bar a{
+  margin-left: 15px;
+  background-color: color("blue-grey", "darken-3");
+}
+
+.switch label input[type=checkbox]:checked + .lever{
+  background-color: color("blue-grey", "darken-3");
+}
+
+.switch label input[type=checkbox]:checked + .lever:after{
+  background-color: color("blue-grey", "darken-3");
+}
+
+#modal-search-bar p{
   margin-left: 10px;
+}
+
+#replace{
+  width: 160px;
+}
+
+#replace-all{
+  width: 220px;
+}
+
+#search-button{
+  width: 160px;
+}
+
+.modal-content.btn{
+  flex: none;
 }
 
 #preview{
@@ -200,4 +284,10 @@
 
 .ace_search_form, .ace_replace_form{
   border: none !important;
+}
+
+// Settings styles
+
+#settings > nav .brand-logo{
+  margin-left: 15px;
 }
