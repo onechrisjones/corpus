@@ -11,6 +11,8 @@ Util = {};
 window.onload = function(){
 	Util.gen.createEditor();
 
+	Util.gen.createFileSearcher();
+
 	Util.session.update();
 };
 
@@ -100,7 +102,20 @@ Util.gen = function(){
 		return editor;
 	}
 
-	return{ render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor, replace: replace, replaceAll: replaceAll }
+	function createFileSearcher() {
+		var searchBar = document.getElementById("search-files");
+		if( searchBar.addEventListener ) {
+			searchBar.addEventListener("input", function() {
+				var regexInnards = searchBar.value;
+				var files = Util.fs.searchNotes(Util.session.getLibrary(), regexInnards);
+				Util.txt.setFileBrowser(files);
+			});
+		}
+	}
+
+	return{ 
+		render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor, 
+		replace: replace, replaceAll: replaceAll, createFileSearcher:createFileSearcher }
 }();
 
 // F I L E   S T U F F
