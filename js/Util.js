@@ -20,6 +20,8 @@ Util.gen = function(){
 	var marked = require('marked');
 	// global ref to editor instance
 	var editorInstance = {};
+	// Current search range
+	var currentRange = {};
 
 	////////////////////////
 	// External Functions //
@@ -36,21 +38,42 @@ Util.gen = function(){
 		var range = editorInstance.find(text, {
 			regExp: regex
 		});
-		console.log(range);
+		currentRange = range;
+		return range;
 	}
 
 	function findNext(){
+		var text = document.querySelector('#search-text').value;
 		var regex = document.getElementById('regex-search-toggle').checked;
 		editorInstance.findNext({
-			regExp: regex
+			regExp: regex,
+			needle: text
 		}, false);
 	}
 
 	function findPrevious(){
+		var text = document.querySelector('#search-text').value;
 		var regex = document.getElementById('regex-search-toggle').checked;
 		editorInstance.findPrevious({
-			regExp: regex
+			regExp: regex,
+			needle: text
 		}, false);
+	}
+
+	function replace(range){
+		var text = document.querySelector('#search-text').value;
+		var replaceText = document.querySelector('#replace-text').value;
+		editorInstance.replace(replaceText, {
+			needle: text
+		});
+	}
+
+	function replaceAll(range){
+		var text = document.querySelector('#search-text').value;
+		var replaceText = document.querySelector('#replace-text').value;
+		editorInstance.replaceAll(replaceText, {
+			needle: text
+		});
 	}
 
 	// Note mixed arrays might goof it up (eg 2="2"). Unless you dig that sorta thing
@@ -72,7 +95,7 @@ Util.gen = function(){
 		return editor;
 	}
 
-	return{ render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor }
+	return{ render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor, replace: replace, replaceAll: replaceAll }
 }();
 
 // F I L E   S T U F F
