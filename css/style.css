@@ -1841,3 +1841,6 @@
 
 .ace_search_form, .ace_replace_form {
   border: none !important; }
+
+#settings > nav .brand-logo {
+  margin-left: 15px; }

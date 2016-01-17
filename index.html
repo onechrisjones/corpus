@@ -62,7 +62,7 @@
       <li class="divider"></li>
       <li><a onclick="PersistentWordPatterns.exe()">Word Patterns</a></li>
       <li class="divider"></li>
-      <li><a href="#!">Settings</a></li>
+      <li><a class = "modal-trigger" href="#settings">Settings</a></li>
       <li class="divider"></li>
       <li><a href="#!">About Corpus</a></li>
       <li class="divider"></li>
@@ -157,6 +157,28 @@
     <div id="preview" class="content-section"></div>
     <div id="analyze" class="content-section">Analyze</div>
     <div id="text-chart" class="content-section">Text Chart</div>
+  </div>
+
+  <!-- Settings Modal-->
+  <div id="settings" class="modal modal-fixed-footer">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Settings</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!-- <li><a href="">Sass</a></li>
+          <li><a href="">Components</a></li>
+          <li><a href="">JavaScript</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Save</a>
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat ">Discard</a>
+    </div>
   </div>
 
   <script src="materialize-src/js/bin/materialize.min.js"></script>
