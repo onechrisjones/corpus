@@ -45,15 +45,15 @@ PersistentWordPatterns = function(){
 		var padding = locm-count.toString().length;
 		var spaaace = (new Array(padding + 1)).join(" ");
 		var buf = (new Array(buffer + 1)).join(" ");
-		return " * "+spaaace+count+buf+wordCombo;
+		return " * "+spaaace+count+buf+wordCombo+"\n";
 	}
 
 	function formatSection(section)  {
-		return "### "+section;
+		return "### "+section+"\n";
 	}
 
 	function formatTitle() {
-		return "# "+title;
+		return "# "+title+"\n";
 	}
 	
 	///////////////////////
@@ -86,10 +86,10 @@ PersistentWordPatterns = function(){
 			};
 
 			formattedLines = formattedLines.sort();
-			formattedLines = formattedLines.join("\n");
+			formattedLines = formattedLines.join("");
 
-			results += formatSection(numWords)+"\n";
-			results += formattedLines + "\n";
+			results += formatSection(numWords);
+			results += formattedLines;
 
 			numWords += 1;
 		}
