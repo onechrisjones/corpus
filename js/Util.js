@@ -93,10 +93,12 @@ Util.gen = function(){
 
 	function createEditor(){
 		// Set up ace editor
-	  var editor = ace.edit('editor');
-	  editor.getSession().setMode("ace/mode/markdown");
+		var editor = ace.edit('editor');
+		var textfield = editor.textInput.getElement();
+		editor.getSession().setMode("ace/mode/markdown");
 		editor.on('change', function(){
 			render(editor.getValue());
+			Util.session.save();
 		});
 		editorInstance = editor;
 		return editor;
@@ -105,7 +107,7 @@ Util.gen = function(){
 	function createFileSearcher() {
 		var searchBar = document.getElementById("search-files");
 		if( searchBar.addEventListener ) {
-			searchBar.addEventListener("input", function() {
+			searchBar.addEventListener("change", function() {
 				var regexInnards = searchBar.value;
 				var files = Util.fs.searchNotes(Util.session.getLibrary(), regexInnards);
 				Util.txt.setFileBrowser(files);
@@ -315,11 +317,9 @@ Util.session = function(){
 
 	// Refreshes everything to the current library and note
 	function update() {
-		console.log("Updating\t" + currentLib + "\t"+ currentNote);
 		Util.txt.setLibraryBrowser( Util.fs.getLibraries() );
 		Util.txt.setFileBrowser( Util.fs.getNotes(currentLib) );
 		Util.txt.setInputText( Util.fs.getNoteContent(currentLib,currentNote) );
-		console.log("Updated");
 	}
 
 	/////////////
@@ -352,14 +352,12 @@ Util.session = function(){
 		update();
 	}
 
-	function demo() {
-		var search = document.getElementById("search-files");
-		var regexInnards = search.value;
-		var files = Util.fs.searchNotes(currentLib, regexInnards);
-		Util.txt.setFileBrowser(files);
+	function save() {
+		var content = Util.txt.getInputText();
+		Util.fs.saveNote(currentLib,currentNote,content)
 	}
 
-	return{ update:update, exe:demo,
+	return{ update:update, save:save,
 		getLibrary:getLibrary, getNote:getNote,
 		setLibrary:setLibrary, setNote:setNote }
 }();
