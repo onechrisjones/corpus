@@ -94,6 +94,8 @@ Util.gen = function(){
 	function createEditor(){
 		// Set up ace editor
 		var editor = ace.edit('editor');
+		// Add line wrapping
+		editor.getSession().setUseWrapMode(true);
 		var textfield = editor.textInput.getElement();
 		editor.getSession().setMode("ace/mode/markdown");
 		editor.on('change', function(){
@@ -115,8 +117,8 @@ Util.gen = function(){
 		}
 	}
 
-	return{ 
-		render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor, 
+	return{
+		render:render, search: search, findNext: findNext, findPrevious: findPrevious, unique:unique, createEditor:createEditor,
 		replace: replace, replaceAll: replaceAll, createFileSearcher:createFileSearcher }
 }();
 
@@ -240,7 +242,7 @@ Util.txt = function(){
 
 	function isMatch(regexInnards,txt) {
 		var pattern = new RegExp(regexInnards,'gi');
-		var count = (txt.match(pattern) || []).length;	
+		var count = (txt.match(pattern) || []).length;
 		return count>0;
 	}
 
