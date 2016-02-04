@@ -135,8 +135,6 @@
   display: block;
 }
 
-
-
 /* File browser styles */
 
 #file-browser{
@@ -145,6 +143,7 @@
   left: 0px;
   width: 250px;
   height: calc(100% - 64px);
+  z-index: 200;
 }
 
 #file-browser li{

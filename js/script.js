@@ -13,7 +13,7 @@ jQuery(function($) {
 
   $('.modal-trigger').leanModal({
     dismissible: true,
-    opacity: 0
+    opacity: .5
   });
 
 });
